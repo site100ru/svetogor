@@ -36,7 +36,7 @@ h1 {
 h2 {
 	font-family: var(--font-family);
 	font-size: 30px;
-	line-height: 0.83;
+	line-height: 1;
 	font-weight: 700;
 }
 
@@ -193,7 +193,7 @@ img {
 .section-title h6 {
 	font-weight: 700;
 	font-size: var(--section-font-size);
-	line-height: 0.83;
+	line-height: 1;
 }
 
 .section .img-wrapper,
@@ -242,6 +242,10 @@ img {
 
 .breadcrumb-item a:hover {
 	color: var(--color-accent-hover) !important;
+}
+
+.breadcrumb-item {
+	--bs-breadcrumb-item-active-color: #7d7d7d;
 }
 
 .breadcrumb img {
