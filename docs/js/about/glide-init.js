@@ -1,7 +1,7 @@
 /**
  * Инициализация слайдера (Glide.js)
  *
- * Этот скрипт запускает слайдер на элементе с id="partners-glide",
+ * Этот скрипт запускает слайдер на элементе 
  * если такой элемент присутствует в DOM.
  *
  * Используется библиотека Glide.js.
@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const sectionProduct = document.querySelector("#section-product")
   const clientsGlide = document.querySelector("#clients-glide");
 
-  
   const contourSlider = document.querySelector("#slider-contour");
   const lightFaceAndEndsSlider = document.querySelector("#slider-light-face-and-ends");
   const lightFaceSlider = document.querySelector("#slider-light-face");
@@ -89,8 +88,14 @@ document.addEventListener('DOMContentLoaded', function () {
       perView: 6,
       gap: 24,
       breakpoints: {
-        992: {
+        1400: {
+          perView: 5,
+        },
+        1200: {
           perView: 4,
+        },
+        992: {
+          perView: 3,
         },
         768: {
           perView: 2,
