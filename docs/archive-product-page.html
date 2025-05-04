@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- Theme CSS -->
+		<link href="css/theme.css" rel="stylesheet" />
+
+		<!-- FONT CSS -->
+		<link href="css/font.css" rel="stylesheet" />
+
+		<link rel="shortcut icon" type="image/x-icon" href="img/ico/email-ico.svg" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+		/>
+
+		<title>About</title>
+	</head>
+	<body>
+		<!-- ХЛЕБНЫЕ КРОШКИ/ ЗАГОЛОВОК -->
+		<section class="section-mini">
+			<div class="container">
+				<!-- Хлебные крошки -->
+				<nav aria-label="breadcrumb" class="mb-0">
+					<ol class="breadcrumb bg-transparent p-0 m-0">
+						<li class="breadcrumb-item">
+							<a href="index.html" class="text-decoration-none text-secondary">
+								<img src="img/ico/breadcrumbs.svg" loading="lazy" />
+							</a>
+						</li>
+						<li class="breadcrumb-item">Продукция</li>
+						<li class="breadcrumb-item active" aria-current="page">
+							Объемные световые буквы
+						</li>
+					</ol>
+				</nav>
+				<h1 class="text-center mb-0">Объемные световые буквы</h1>
+			</div>
+		</section>
+
+		<!--КОНТЕНТ-->
+		<section class="section section-glide section-catalog-product box-shadow-main">
+			<div class="container">
+				<!-- Пилоны -->
+				<div class="section-content-cards">
+					<div class="section-title text-center">
+						<h3>Пилоны</h3>
+						<img src="img/ico/points.svg" alt="Точки" class="img-fluid" />
+					</div>
+
+					<div class="row justify-content-center d-none d-lg-flex">
+						<!-- Карточка 1 -->
+						<article class="col-lg-4">
+							<a href="product.html" class="card card-img-container">
+								<div class="card-img-container">
+									<img
+										src="img/product/product-16.jpg"
+										alt="Изображение продукта"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Пилон двухсторонний</h5>
+									<p class="card-text">
+										Пилоны это напольные световые рекламные конструкции, как
+										правило 2-х сторонние.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center mt-auto"
+									>
+										<span class="product-price">2 500₽</span>
+										<button
+											type="button"
+											class="btn btn-order btn-min"
+											data-bs-toggle="modal"
+											data-bs-target="#callbackModal"
+											onclick="event.preventDefault(); event.stopPropagation();"
+										>
+											Заказать
+										</button>
+									</div>
+								</div>
+							</a>
+						</article>
+						<!-- Карточка 2 -->
+						<article class="col-lg-4">
+							<a href="product.html" class="card card-img-container">
+								<div class="card-img-container">
+									<img
+										src="img/product/product-16.jpg"
+										alt="Изображение продукта"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Пилон двухсторонний</h5>
+									<p class="card-text">
+										Пилоны это напольные световые рекламные конструкции, как
+										правило 2-х сторонние.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center mt-auto"
+									>
+										<span class="product-price">2 500₽</span>
+										<button
+											type="button"
+											class="btn btn-order btn-min"
+											data-bs-toggle="modal"
+											data-bs-target="#callbackModal"
+											onclick="event.preventDefault(); event.stopPropagation();"
+										>
+											Заказать
+										</button>
+									</div>
+								</div>
+							</a>
+						</article>
+						<!-- Карточка 3 -->
+						<article class="col-lg-4">
+							<a href="product.html" class="card card-img-container">
+								<div class="card-img-container">
+									<img
+										src="img/product/product-16.jpg"
+										alt="Изображение продукта"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Пилон двухсторонний</h5>
+									<p class="card-text">
+										Пилоны это напольные световые рекламные конструкции, как
+										правило 2-х сторонние.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center mt-auto"
+									>
+										<span class="product-price">2 500₽</span>
+										<button
+											type="button"
+											class="btn btn-order btn-min"
+											data-bs-toggle="modal"
+											data-bs-target="#callbackModal"
+											onclick="event.preventDefault(); event.stopPropagation();"
+										>
+											Заказать
+										</button>
+									</div>
+								</div>
+							</a>
+						</article>
+					</div>
+
+					<!-- Слайдер для планшетов и мобильных -->
+					<div class="d-block d-lg-none">
+						<div class="products-glide light-letters-slider" id="slider-light-face">
+							<div class="glide__track" data-glide-el="track">
+								<div class="glide__slides">
+									<!-- Слайд 1 -->
+									<article class="glide__slide">
+										<a href="product.html" class="card card-img-container">
+											<div class="card-img-container">
+												<img
+													src="img/product/product-16.jpg"
+													alt="Изображение продукта"
+													class="card-img-top"
+												/>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">Пилон двухсторонний</h5>
+												<p class="card-text">
+													Пилоны это напольные световые рекламные
+													конструкции, как правило 2-х сторонние.
+												</p>
+												<div
+													class="d-flex justify-content-between align-items-center mt-auto"
+												>
+													<span class="product-price">2 500₽</span>
+													<button
+														type="button"
+														class="btn btn-order btn-min"
+														data-bs-toggle="modal"
+														data-bs-target="#callbackModal"
+														onclick="event.preventDefault(); event.stopPropagation();"
+													>
+														Заказать
+													</button>
+												</div>
+											</div>
+										</a>
+									</article>
+									<!-- Слайд 2 -->
+									<article class="glide__slide">
+										<a href="product.html" class="card card-img-container">
+											<div class="card-img-container">
+												<img
+													src="img/product/product-16.jpg"
+													alt="Изображение продукта"
+													class="card-img-top"
+												/>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">Пилон двухсторонний</h5>
+												<p class="card-text">
+													Пилоны это напольные световые рекламные
+													конструкции, как правило 2-х сторонние.
+												</p>
+												<div
+													class="d-flex justify-content-between align-items-center mt-auto"
+												>
+													<span class="product-price">2 500₽</span>
+													<button
+														type="button"
+														class="btn btn-order btn-min"
+														data-bs-toggle="modal"
+														data-bs-target="#callbackModal"
+														onclick="event.preventDefault(); event.stopPropagation();"
+													>
+														Заказать
+													</button>
+												</div>
+											</div>
+										</a>
+									</article>
+									<!-- Слайд 3 -->
+									<article class="glide__slide">
+										<a href="product.html" class="card card-img-container">
+											<div class="card-img-container">
+												<img
+													src="img/product/product-16.jpg"
+													alt="Изображение продукта"
+													class="card-img-top"
+												/>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">Пилон двухсторонний</h5>
+												<p class="card-text">
+													Пилоны это напольные световые рекламные
+													конструкции, как правило 2-х сторонние.
+												</p>
+												<div
+													class="d-flex justify-content-between align-items-center mt-auto"
+												>
+													<span class="product-price">2 500₽</span>
+													<button
+														type="button"
+														class="btn btn-order btn-min"
+														data-bs-toggle="modal"
+														data-bs-target="#callbackModal"
+														onclick="event.preventDefault(); event.stopPropagation();"
+													>
+														Заказать
+													</button>
+												</div>
+											</div>
+										</a>
+									</article>
+								</div>
+							</div>
+							<!-- Стрелки навигации -->
+							<div class="glide__arrows" data-glide-el="controls">
+								<button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+									<img src="img/ico/arrow-left.svg" alt="Назад" />
+								</button>
+								<button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+									<img src="img/ico/arrow-right.svg" alt="Вперед" />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-glide section-catalog-product box-shadow-main bg-grey">
+			<div class="container">
+				<!-- Стеллы, пилоны, доски почета -->
+				<div class="section-content-cards">
+					<div class="section-title text-center">
+						<h3>Стеллы, пилоны, доски почета</h3>
+						<img src="img/ico/points.svg" alt="Точки" class="img-fluid" />
+					</div>
+
+					<div class="row justify-content-center d-none d-lg-flex">
+						<!-- Карточка 1 -->
+						<article class="col-lg-4">
+							<a href="product.html" class="card card-img-container">
+								<div class="card-img-container">
+									<img
+										src="img/product/product-4.jpg"
+										alt="Изображение продукта"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Стеллы, пилоны, доски почета</h5>
+									<p class="card-text">
+										Пилоны это напольные световые рекламные конструкции, как
+										правило 2-х сторонние.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center mt-auto"
+									>
+										<span class="product-price">2 500₽</span>
+										<button
+											type="button"
+											class="btn btn-order btn-min"
+											data-bs-toggle="modal"
+											data-bs-target="#callbackModal"
+											onclick="event.preventDefault(); event.stopPropagation();"
+										>
+											Заказать
+										</button>
+									</div>
+								</div>
+							</a>
+						</article>
+						<!-- Карточка 2 -->
+						<article class="col-lg-4">
+							<a href="product.html" class="card card-img-container">
+								<div class="card-img-container">
+									<img
+										src="img/product/product-4.jpg"
+										alt="Изображение продукта"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Стеллы, пилоны, доски почета</h5>
+									<p class="card-text">
+										Пилоны это напольные световые рекламные конструкции, как
+										правило 2-х сторонние.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center mt-auto"
+									>
+										<span class="product-price">2 500₽</span>
+										<button
+											type="button"
+											class="btn btn-order btn-min"
+											data-bs-toggle="modal"
+											data-bs-target="#callbackModal"
+											onclick="event.preventDefault(); event.stopPropagation();"
+										>
+											Заказать
+										</button>
+									</div>
+								</div>
+							</a>
+						</article>
+						<!-- Карточка 3 -->
+						<article class="col-lg-4">
+							<a href="product.html" class="card card-img-container">
+								<div class="card-img-container">
+									<img
+										src="img/product/product-4.jpg"
+										alt="Изображение продукта"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Стеллы, пилоны, доски почета</h5>
+									<p class="card-text">
+										Пилоны это напольные световые рекламные конструкции, как
+										правило 2-х сторонние.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center mt-auto"
+									>
+										<span class="product-price">2 500₽</span>
+										<button
+											type="button"
+											class="btn btn-order btn-min"
+											data-bs-toggle="modal"
+											data-bs-target="#callbackModal"
+											onclick="event.preventDefault(); event.stopPropagation();"
+										>
+											Заказать
+										</button>
+									</div>
+								</div>
+							</a>
+						</article>
+					</div>
+
+					<!-- Слайдер для планшетов и мобильных -->
+					<div class="d-block d-lg-none">
+						<div class="products-glide light-letters-slider" id="slider-contour">
+							<div class="glide__track" data-glide-el="track">
+								<div class="glide__slides">
+									<!-- Слайд 1 -->
+									<article class="glide__slide">
+										<a href="product.html" class="card card-img-container">
+											<div class="card-img-container">
+												<img
+													src="img/product/product-4.jpg"
+													alt="Изображение продукта"
+													class="card-img-top"
+												/>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">
+													Стеллы, пилоны, доски почета
+												</h5>
+												<p class="card-text">
+													Пилоны это напольные световые рекламные
+													конструкции, как правило 2-х сторонние.
+												</p>
+												<div
+													class="d-flex justify-content-between align-items-center mt-auto"
+												>
+													<span class="product-price">2 500₽</span>
+													<button
+														type="button"
+														class="btn btn-order btn-min"
+														data-bs-toggle="modal"
+														data-bs-target="#callbackModal"
+														onclick="event.preventDefault(); event.stopPropagation();"
+													>
+														Заказать
+													</button>
+												</div>
+											</div>
+										</a>
+									</article>
+									<!-- Слайд 2 -->
+									<article class="glide__slide">
+										<a href="product.html" class="card card-img-container">
+											<div class="card-img-container">
+												<img
+													src="img/product/product-4.jpg"
+													alt="Изображение продукта"
+													class="card-img-top"
+												/>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">
+													Стеллы, пилоны, доски почета
+												</h5>
+												<p class="card-text">
+													Пилоны это напольные световые рекламные
+													конструкции, как правило 2-х сторонние.
+												</p>
+												<div
+													class="d-flex justify-content-between align-items-center mt-auto"
+												>
+													<span class="product-price">2 500₽</span>
+													<button
+														type="button"
+														class="btn btn-order btn-min"
+														data-bs-toggle="modal"
+														data-bs-target="#callbackModal"
+														onclick="event.preventDefault(); event.stopPropagation();"
+													>
+														Заказать
+													</button>
+												</div>
+											</div>
+										</a>
+									</article>
+									<!-- Слайд 3 -->
+									<article class="glide__slide">
+										<a href="product.html" class="card card-img-container">
+											<div class="card-img-container">
+												<img
+													src="img/product/product-4.jpg"
+													alt="Изображение продукта"
+													class="card-img-top"
+												/>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">
+													Стеллы, пилоны, доски почета
+												</h5>
+												<p class="card-text">
+													Пилоны это напольные световые рекламные
+													конструкции, как правило 2-х сторонние.
+												</p>
+												<div
+													class="d-flex justify-content-between align-items-center mt-auto"
+												>
+													<span class="product-price">2 500₽</span>
+													<button
+														type="button"
+														class="btn btn-order btn-min"
+														data-bs-toggle="modal"
+														data-bs-target="#callbackModal"
+														onclick="event.preventDefault(); event.stopPropagation();"
+													>
+														Заказать
+													</button>
+												</div>
+											</div>
+										</a>
+									</article>
+								</div>
+							</div>
+							<!-- Стрелки навигации -->
+							<div class="glide__arrows" data-glide-el="controls">
+								<button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+									<img src="img/ico/arrow-left.svg" alt="Назад" />
+								</button>
+								<button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+									<img src="img/ico/arrow-right.svg" alt="Вперед" />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-glide section-catalog-product box-shadow-main">
+			<div class="container">
+				<!-- Уличные информ-стенды -->
+				<div class="section-content-cards">
+					<div class="section-title text-center">
+						<h3>Уличные информ-стенды</h3>
+						<img src="img/ico/points.svg" alt="Точки" class="img-fluid" />
+					</div>
+
+					<div class="row justify-content-center d-none d-lg-flex">
+						<!-- Карточка 1 -->
+						<article class="col-lg-4">
+							<a href="product.html" class="card card-img-container">
+								<div class="card-img-container">
+									<img
+										src="img/product/product-11.jpg"
+										alt="Изображение продукта"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Уличные информ-стенды</h5>
+									<p class="card-text">
+										Пилоны это напольные световые рекламные конструкции, как
+										правило 2-х сторонние.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center mt-auto"
+									>
+										<span class="product-price">2 500₽</span>
+										<button
+											type="button"
+											class="btn btn-order btn-min"
+											data-bs-toggle="modal"
+											data-bs-target="#callbackModal"
+											onclick="event.preventDefault(); event.stopPropagation();"
+										>
+											Заказать
+										</button>
+									</div>
+								</div>
+							</a>
+						</article>
+						<!-- Карточка 2 -->
+						<article class="col-lg-4">
+							<a href="product.html" class="card card-img-container">
+								<div class="card-img-container">
+									<img
+										src="img/product/product-11.jpg"
+										alt="Изображение продукта"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Уличные информ-стенды</h5>
+									<p class="card-text">
+										Пилоны это напольные световые рекламные конструкции, как
+										правило 2-х сторонние.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center mt-auto"
+									>
+										<span class="product-price">2 500₽</span>
+										<button
+											type="button"
+											class="btn btn-order btn-min"
+											data-bs-toggle="modal"
+											data-bs-target="#callbackModal"
+											onclick="event.preventDefault(); event.stopPropagation();"
+										>
+											Заказать
+										</button>
+									</div>
+								</div>
+							</a>
+						</article>
+						<!-- Карточка 3 -->
+						<article class="col-lg-4">
+							<a href="product.html" class="card card-img-container">
+								<div class="card-img-container">
+									<img
+										src="img/product/product-11.jpg"
+										alt="Изображение продукта"
+										class="card-img-top"
+									/>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">Уличные информ-стенды</h5>
+									<p class="card-text">
+										Пилоны это напольные световые рекламные конструкции, как
+										правило 2-х сторонние.
+									</p>
+									<div
+										class="d-flex justify-content-between align-items-center mt-auto"
+									>
+										<span class="product-price">2 500₽</span>
+										<button
+											type="button"
+											class="btn btn-order btn-min"
+											data-bs-toggle="modal"
+											data-bs-target="#callbackModal"
+											onclick="event.preventDefault(); event.stopPropagation();"
+										>
+											Заказать
+										</button>
+									</div>
+								</div>
+							</a>
+						</article>
+					</div>
+
+					<!-- Слайдер для планшетов и мобильных -->
+					<div class="d-block d-lg-none">
+						<div
+							class="products-glide light-letters-slider"
+							id="slider-light-face-and-ends"
+						>
+							<div class="glide__track" data-glide-el="track">
+								<div class="glide__slides">
+									<!-- Слайд 1 -->
+									<article class="glide__slide">
+										<a href="product.html" class="card card-img-container">
+											<div class="card-img-container">
+												<img
+													src="img/product/product-11.jpg"
+													alt="Изображение продукта"
+													class="card-img-top"
+												/>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">Уличные информ-стенды</h5>
+												<p class="card-text">
+													Пилоны это напольные световые рекламные
+													конструкции, как правило 2-х сторонние.
+												</p>
+												<div
+													class="d-flex justify-content-between align-items-center mt-auto"
+												>
+													<span class="product-price">2 500₽</span>
+													<button
+														type="button"
+														class="btn btn-order btn-min"
+														data-bs-toggle="modal"
+														data-bs-target="#callbackModal"
+														onclick="event.preventDefault(); event.stopPropagation();"
+													>
+														Заказать
+													</button>
+												</div>
+											</div>
+										</a>
+									</article>
+									<!-- Слайд 2 -->
+									<article class="glide__slide">
+										<a href="product.html" class="card card-img-container">
+											<div class="card-img-container">
+												<img
+													src="img/product/product-11.jpg"
+													alt="Изображение продукта"
+													class="card-img-top"
+												/>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">Уличные информ-стенды</h5>
+												<p class="card-text">
+													Пилоны это напольные световые рекламные
+													конструкции, как правило 2-х сторонние.
+												</p>
+												<div
+													class="d-flex justify-content-between align-items-center mt-auto"
+												>
+													<span class="product-price">2 500₽</span>
+													<button
+														type="button"
+														class="btn btn-order btn-min"
+														data-bs-toggle="modal"
+														data-bs-target="#callbackModal"
+														onclick="event.preventDefault(); event.stopPropagation();"
+													>
+														Заказать
+													</button>
+												</div>
+											</div>
+										</a>
+									</article>
+									<!-- Слайд 3 -->
+									<article class="glide__slide">
+										<a href="product.html" class="card card-img-container">
+											<div class="card-img-container">
+												<img
+													src="img/product/product-11.jpg"
+													alt="Изображение продукта"
+													class="card-img-top"
+												/>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title">Уличные информ-стенды</h5>
+												<p class="card-text">
+													Пилоны это напольные световые рекламные
+													конструкции, как правило 2-х сторонние.
+												</p>
+												<div
+													class="d-flex justify-content-between align-items-center mt-auto"
+												>
+													<span class="product-price">2 500₽</span>
+													<button
+														type="button"
+														class="btn btn-order btn-min"
+														data-bs-toggle="modal"
+														data-bs-target="#callbackModal"
+														onclick="event.preventDefault(); event.stopPropagation();"
+													>
+														Заказать
+													</button>
+												</div>
+											</div>
+										</a>
+									</article>
+								</div>
+							</div>
+							<!-- Стрелки навигации -->
+							<div class="glide__arrows" data-glide-el="controls">
+								<button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+									<img src="img/ico/arrow-left.svg" alt="Назад" />
+								</button>
+								<button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+									<img src="img/ico/arrow-right.svg" alt="Вперед" />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Не нашли нужного товара? -->
+		<section class="section section-half bg-grey">
+			<div class="d-flex flex-wrap half-bg">
+				<!-- Левая часть с фоном -->
+				<div class="left-part flex-grow-1"></div>
+
+				<!-- Правая часть с картинкой (скрывается на мобилках) -->
+				<div class="right-part d-none d-md-block">
+					<img src="img/order-bg.jpg" alt="Изображение" class="img-cover" />
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row justify-content-center py-5">
+					<div class="col-md-6 col-lg-5 text-md-end">
+						<h2 class="mb-1">Не нашли нужного товара?</h2>
+
+						<p class="order-description mb-3">
+							Оставьте заявку и мы свяжемся с Вами в течение рабочего дня или напишите
+							нам в мессенджер и мы проконсультируем Вас по всем вопросам касающимся
+							нашей продукции.
+						</p>
+
+						<img src="img/ico/points.svg" alt="Точки" class="img-fluid mb-5" />
+
+						<br />
+
+						<button
+							type="button"
+							class="btn mb-4"
+							data-bs-toggle="modal"
+							data-bs-target="#callbackModal"
+						>
+							Получить консультацию
+						</button>
+
+						<div class="row justify-content-md-end">
+							<div class="col">
+								<ul class="nav justify-content-md-end gap-3">
+									<li class="nav-item">
+										<a
+											class="nav-link ico-button"
+											href="https://wa.me/79361385058?web=1&amp;app_absent=1"
+										>
+											<img src="img/ico/whatsapp.svg" />
+										</a>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ico-button"
+											href="https://t.me/+79361385058"
+										>
+											<img src="img/ico/telegram.svg" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7"></div>
+				</div>
+			</div>
+		</section>
+
+		<div style="height: 4px"></div>
+
+		<!-- CONTACTS SECTION 4 -->
+
+		<!-- Callback Modal -->
+		<div
+			class="modal fade"
+			id="callbackModal"
+			tabindex="-1"
+			aria-labelledby="callbackModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<form method="post" action="mails/callback-mail.php" class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="callbackModalLabel">Оставить заявку</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-6 mb-3 mb-md-0">
+								<label for="name-input" class="form-label">Имя</label>
+								<input
+									type="text"
+									name="name"
+									id="name-input"
+									class="form-control"
+								/>
+							</div>
+							<div class="col-md-6">
+								<label for="tel-input" class="form-label">Телефон</label>
+								<input
+									type="text"
+									name="tel"
+									id="tel-input"
+									class="form-control telMask"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-big me-auto">Оставить заявку</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /Callback Modal -->
+
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+		<!-- jQuery -->
+		<script src="js/jquery-1.5.1.min.js"></script>
+
+		<!-- Menu -->
+		<script src="js/menu-scroll.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+		<script src="js/about/glide-init.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/telMask.js"></script>
+	</body>
+</html>
