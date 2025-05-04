@@ -19,12 +19,31 @@
 			href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
 		/>
 		<style>
+			.header-nav-top button.nav-link,
+			.header-nav-top a.nav-link {
+				transition: color 0.5s;
+			}
+
+			.header-nav-top button.nav-link:hover,
+			.header-nav-top a.nav-link:hover {
+				color: var(--color-accent);
+			}
+
 			.nav-item-hero > a {
 				font-family: var(--second-family);
 				font-weight: 500;
 				font-size: 14px;
 				text-transform: uppercase;
 				color: #4b4b4b;
+				transition: color 0.5s;
+			}
+
+			.nav-item-hero > a:hover {
+				color: var(--color-accent);
+			}
+
+			.nav-item-hero > a:has(+ div.show) {
+				color: var(--color-accent);
 			}
 
 			/* Стили для навигации */
@@ -266,6 +285,12 @@
 				right: 0;
 				bottom: -6px;
 				background-color: transparent;
+			}
+
+			@media (max-width: 1400px) {
+				.nav-item.dropdown::after {
+					height: 20px;
+				}
 			}
 
 			.offcanvas-header {
