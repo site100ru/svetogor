@@ -24,6 +24,1233 @@
 		<title>About</title>
 	</head>
 	<body>
+		<nav
+			class="header-nav-top navbar navbar-expand-lg navbar-light d-none d-lg-block py-1 py-lg-0"
+		>
+			<div class="container">
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav align-items-center justify-content-between w-100">
+						<li class="nav-item me-3 me-md-1 me-xl-3">
+							<div
+								class="nav-link d-flex align-items-center gap-3 gap-md-2 gap-xl-3 lh-1 nav-link-text"
+							>
+								<img src="img/ico/location-ico.svg" />
+								г. Москва, ул. Полярная, <br />
+								31В, оф. 141
+							</div>
+						</li>
+
+						<li class="nav-item me-3 me-md-1 me-xl-3">
+							<div
+								class="nav-link d-flex align-items-center gap-3 gap-md-2 gap-xl-3 lh-1 nav-link-text"
+							>
+								<img src="img/ico/clock-ico.svg" />
+								Пн-Пт: с 10:00-18:00 <br />
+								Сб, Вс - Выходной
+							</div>
+						</li>
+
+						<li class="nav-item me-3 me-md-1 me-xl-3">
+							<button
+								class="nav-link d-flex align-items-center gap-3 gap-md-2 gap-xl-3 lh-1"
+								data-bs-toggle="modal"
+								data-bs-target="#callbackModal"
+							>
+								<img src="img/ico/callback-ico.svg" />
+								Обратный звонок
+							</button>
+						</li>
+
+						<li class="nav-item me-3 me-md-1 me-xl-3">
+							<button
+								class="nav-link d-flex align-items-center gap-3 gap-md-2 gap-xl-3 lh-1"
+								data-bs-toggle="modal"
+								data-bs-target="#callbackModal"
+							>
+								<img src="img/ico/calculator.svg" />
+								Рассчитать стоимость
+							</button>
+						</li>
+
+						<li class="nav-item ms-auto me-3 me-md-1 me-xl-3">
+							<a class="top-menu-tel nav-link gap-3" href="tel:74952450325">
+								<img src="img/ico/mobile-phone-ico.svg" />
+								+7 (495) 245-03-25
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link ico-button" href="https://t.me/vasilyevr">
+								<img src="img/ico/telegram.svg" />
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a
+								class="nav-link ico-button"
+								href="whatsapp://send?phone=+89521295555"
+							>
+								<img src="img/ico/whatsapp.svg" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="navbar-wrapper">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
+				<div class="container flex-wrap">
+					<!-- Логотип -->
+					<a class="navbar-brand mx-lg-auto ms-xxl-0" href="index.html">
+						<img src="img/logo.svg" alt="Логотип" />
+					</a>
+
+					<!-- Кнопка мобильного меню -->
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#mobileMenu"
+						aria-controls="mobileMenu"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Меню для десктопа -->
+					<div class="collapse navbar-collapse" id="navbarContent">
+						<ul class="navbar-nav mx-md-auto me-xxl-0">
+							<!-- Главная -->
+							<li class="nav-item nav-item-hero">
+								<a class="nav-link" href="index.html">Главная</a>
+							</li>
+
+							<!-- Точка -->
+							<li class="nav-item d-none d-lg-inline align-content-center">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+
+							<!-- Продукция -->
+							<li class="nav-item nav-item-hero dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									id="productsDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="true"
+									href="#"
+								>
+									<!-- -->
+									Продукция
+								</a>
+								<div
+									class="dropdown-menu mega-menu"
+									aria-labelledby="productsDropdown"
+								>
+									<div class="container">
+										<div class="row">
+											<!-- Второй уровень меню (в левой колонке) -->
+											<div class="col-lg-3">
+												<div class="category-menu">
+													<nav class="nav flex-column">
+														<!-- Световые короба -->
+														<a
+															class="nav-link active"
+															href="archive-product-page.html"
+															data-target="1"
+														>
+															<span class="category-icon">
+																<img
+																	src="img/ico/menu/megasubmenu-ico-1.svg"
+																	alt="Иконка световые короба"
+																/>
+															</span>
+															<span>Световые короба</span>
+															<span class="category-arrow"></span>
+														</a>
+
+														<!-- Объемные световые буквы -->
+														<a
+															class="nav-link"
+															href="archive-product-page.html"
+															data-target="2"
+														>
+															<span class="category-icon">
+																<img
+																	src="img/ico/menu/megasubmenu-ico-2.svg"
+																	alt="Иконка объемные световые буквы"
+																/>
+															</span>
+															<span>Объемные световые буквы</span>
+															<span class="category-arrow"></span>
+														</a>
+
+														<!-- Объемные несветовые буквы -->
+														<a
+															class="nav-link"
+															href="archive-product-page.html"
+															data-target="3"
+														>
+															<span class="category-icon">
+																<img
+																	src="img/ico/menu/megasubmenu-ico-3.svg"
+																	alt="Иконка объемные несветовые буквы"
+																/>
+															</span>
+															<span>Объемные несветовые буквы</span>
+															<span class="category-arrow"></span>
+														</a>
+
+														<!-- Плоские буквы -->
+														<a
+															class="nav-link"
+															href="archive-product-page.html"
+															data-target="4"
+														>
+															<span class="category-icon">
+																<img
+																	src="img/ico/menu/megasubmenu-ico-4.svg"
+																	alt="Иконка плоские буквы"
+																/>
+															</span>
+															<span>Плоские буквы</span>
+															<span class="category-arrow"></span>
+														</a>
+
+														<!-- Дизайнерские буквы -->
+														<a
+															class="nav-link"
+															href="archive-product-page.html"
+															data-target="5"
+														>
+															<span class="category-icon">
+																<img
+																	src="img/ico/menu/megasubmenu-ico-5.svg"
+																	alt="Иконка дизайнерские буквы"
+																/>
+															</span>
+															<span>Дизайнерские буквы</span>
+															<span class="category-arrow"></span>
+														</a>
+
+														<!-- Крупноформатные буквы -->
+														<a
+															class="nav-link"
+															href="archive-product-page.html"
+															data-target="6"
+														>
+															<span class="category-icon">
+																<img
+																	src="img/ico/menu/megasubmenu-ico-6.svg"
+																	alt="Иконка крупноформатные буквы"
+																/>
+															</span>
+															<span>Крупноформатные буквы</span>
+															<span class="category-arrow"></span>
+														</a>
+
+														<!-- Нержавейка -->
+														<a
+															class="nav-link"
+															href="archive-product-page.html"
+															data-target="7"
+														>
+															<span class="category-icon">
+																<img
+																	src="img/ico/menu/megasubmenu-ico-7.svg"
+																	alt="Иконка нержавейка"
+																/>
+															</span>
+															<span>Нержавейка</span>
+															<span class="category-arrow"></span>
+														</a>
+
+														<!-- Панель-кронштейны -->
+														<a
+															class="nav-link"
+															href="archive-product-page.html"
+															data-target="8"
+														>
+															<span class="category-icon">
+																<img
+																	src="img/ico/menu/megasubmenu-ico-8.svg"
+																	alt="Иконка панель-кронштейны"
+																/>
+															</span>
+															<span>Панель-кронштейны</span>
+															<span class="category-arrow"></span>
+														</a>
+
+														<!-- Стеллы пилоны пиларсы -->
+														<a
+															class="nav-link"
+															href="archive-product-page.html"
+															data-target="9"
+														>
+															<span class="category-icon">
+																<img
+																	src="img/ico/menu/megasubmenu-ico-9.svg"
+																	alt="Иконка стеллы пилоны пиларсы"
+																/>
+															</span>
+															<span>Стеллы пилоны пиларсы</span>
+															<span class="category-arrow"></span>
+														</a>
+
+														<!-- Штендеры -->
+														<a
+															class="nav-link"
+															href="archive-product-page.html"
+															data-target="10"
+														>
+															<span class="category-icon">
+																<img
+																	src="img/ico/menu/megasubmenu-ico-10.svg"
+																	alt="Иконка штендеры"
+																/>
+															</span>
+															<span>Штендеры</span>
+															<span class="category-arrow"></span>
+														</a>
+
+														<!-- Домовые знаки -->
+														<a
+															class="nav-link"
+															href="archive-product-page.html"
+															data-target="11"
+														>
+															<span class="category-icon">
+																<img
+																	src="img/ico/menu/megasubmenu-ico-11.svg"
+																	alt="Иконка домовые знаки"
+																/>
+															</span>
+															<span>Домовые знаки</span>
+															<span class="category-arrow"></span>
+														</a>
+													</nav>
+												</div>
+											</div>
+
+											<!-- Третий уровень меню (правая часть) -->
+											<div class="col-lg-9">
+												<!-- Подкатегории для Световые короба -->
+												<div
+													class="subcategory-content active"
+													id="1-content"
+												>
+													<div class="row">
+														<!-- Классические  -->
+														<div class="col-md-3">
+															<h5 class="subcategory-title">
+																Классические
+															</h5>
+															<ul class="subcategory-list">
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Металлические</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Алюминиевые</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Пластиковые</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Клееные</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Баннерные</a
+																	>
+																</li>
+															</ul>
+														</div>
+
+														<!-- Композитные  -->
+														<div class="col-md-3">
+															<h5 class="subcategory-title">
+																Композитные
+															</h5>
+															<ul class="subcategory-list">
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Прорезные буквы</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>С инкрустацией</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Инкрустация толстым
+																		акрилом</a
+																	>
+																</li>
+															</ul>
+														</div>
+
+														<!-- Тонкие  -->
+														<div class="col-md-3">
+															<h5 class="subcategory-title">
+																Тонкие
+															</h5>
+															<ul class="subcategory-list">
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Фреймлайты</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Кристалайты</a
+																	>
+																</li>
+															</ul>
+														</div>
+
+														<!-- С дверцей  -->
+														<div class="col-md-3">
+															<h5 class="subcategory-title">
+																С дверцей
+															</h5>
+															<ul class="subcategory-list">
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Меню-боксы (премиум)</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Опен-боксы</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Мини опен-боксы</a
+																	>
+																</li>
+															</ul>
+														</div>
+
+														<!-- Премиум  -->
+														<div class="col-md-3">
+															<h5 class="subcategory-title">
+																Премиум
+															</h5>
+															<ul class="subcategory-list">
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Нержавейка</a
+																	>
+																</li>
+															</ul>
+														</div>
+
+														<!-- Напольные  -->
+														<div class="col-md-3">
+															<h5 class="subcategory-title">
+																Напольные
+															</h5>
+															<ul class="subcategory-list">
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Стационарные</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Передвижные</a
+																	>
+																</li>
+															</ul>
+														</div>
+
+														<!-- С заменой изображения  -->
+														<div class="col-md-3">
+															<h5 class="subcategory-title">
+																С заменой изображения
+															</h5>
+															<ul class="subcategory-list">
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>С клик-профилем</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Текстильные</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Баннерные</a
+																	>
+																</li>
+																<li>
+																	<a
+																		href="single-product-page.html"
+																		>Клееные с карманом</a
+																	>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+
+												<!-- Подкатегории для Объемные световые буквы -->
+												<div class="subcategory-content" id="2-content">
+													<div class="row">
+														<div class="col-md-12">
+															<p>
+																//TODO: Добавить подкатегории для
+																Объемные световые буквы
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<!-- Подкатегории для Объемные несветовые буквы -->
+												<div class="subcategory-content" id="3-content">
+													<div class="row">
+														<div class="col-md-12">
+															<p>
+																//TODO: Добавить подкатегории для
+																Объемные несветовые буквы
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<!-- Подкатегории для Плоские буквы -->
+												<div class="subcategory-content" id="4-content">
+													<div class="row">
+														<div class="col-md-12">
+															<p>
+																//TODO: Добавить подкатегории для
+																Плоские буквы
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<!-- Подкатегории для Дизайнерские буквы -->
+												<div class="subcategory-content" id="5-content">
+													<div class="row">
+														<div class="col-md-12">
+															<p>
+																//TODO: Добавить подкатегории для
+																Дизайнерские буквы
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<!-- Подкатегории для Крупноформатные буквы -->
+												<div class="subcategory-content" id="6-content">
+													<div class="row">
+														<div class="col-md-12">
+															<p>
+																//TODO: Добавить подкатегории для
+																Крупноформатные буквы
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<!-- Подкатегории для Нержавейка -->
+												<div class="subcategory-content" id="7-content">
+													<div class="row">
+														<div class="col-md-12">
+															<p>
+																//TODO: Добавить подкатегории для
+																Нержавейка
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<!-- Подкатегории для Панель-кронштейны -->
+												<div class="subcategory-content" id="8-content">
+													<div class="row">
+														<div class="col-md-12">
+															<p>
+																//TODO: Добавить подкатегории для
+																Панель-кронштейны
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<!-- Подкатегории для Стеллы пилоны пиларсы -->
+												<div class="subcategory-content" id="9-content">
+													<div class="row">
+														<div class="col-md-12">
+															<p>
+																//TODO: Добавить подкатегории для
+																Стеллы пилоны пиларсы
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<!-- Подкатегории для Штендеры -->
+												<div class="subcategory-content" id="10-content">
+													<div class="row">
+														<div class="col-md-12">
+															<p>
+																//TODO: Добавить подкатегории для
+																Штендеры
+															</p>
+														</div>
+													</div>
+												</div>
+
+												<!-- Подкатегории для Домовые знаки -->
+												<div class="subcategory-content" id="11-content">
+													<div class="row">
+														<div class="col-md-12">
+															<p>
+																//TODO: Добавить подкатегории для
+																Домовые знаки
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<!-- Услуги -->
+							<li class="nav-item nav-item-hero">
+								<a class="nav-link" href="archive-services.html">Услуги</a>
+							</li>
+
+							<!-- Точка -->
+							<li class="nav-item d-none d-lg-inline align-content-center">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+
+							<!-- Магазин -->
+							<li class="nav-item nav-item-hero">
+								<a class="nav-link" href="archive-product-page.html">Магазин</a>
+							</li>
+
+							<!-- Точка -->
+							<li class="nav-item d-none d-lg-inline align-content-center">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+
+							<!-- Портфолио -->
+							<li class="nav-item nav-item-hero">
+								<a class="nav-link" href="archive-portfolio-2.html">Портфолио</a>
+							</li>
+
+							<!-- Точка -->
+							<li class="nav-item d-none d-lg-inline align-content-center">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+
+							<!-- Статьи -->
+							<li class="nav-item nav-item-hero">
+								<a class="nav-link" href="archive-news-posts-page.html">Статьи</a>
+							</li>
+
+							<!-- Точка -->
+							<li class="nav-item d-none d-lg-inline align-content-center">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+
+							<!-- Новости -->
+							<li class="nav-item nav-item-hero">
+								<a class="nav-link" href="archive-news-posts-page.html">Новости</a>
+							</li>
+
+							<!-- Точка -->
+							<li class="nav-item d-none d-lg-inline align-content-center">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+
+							<!-- О нас -->
+							<li class="nav-item nav-item-hero">
+								<a class="nav-link" href="about.html">О нас</a>
+							</li>
+
+							<!-- Точка -->
+							<li class="nav-item d-none d-lg-inline align-content-center">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+
+							<!-- Контакты -->
+							<li class="nav-item nav-item-hero">
+								<a class="nav-link" href="contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Мобильное меню (Offcanvas) -->
+		<div
+			class="offcanvas offcanvas-end"
+			tabindex="-1"
+			id="mobileMenu"
+			aria-labelledby="mobileMenuLabel"
+		>
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="mobileMenuLabel">Меню</h5>
+				<button
+					type="button"
+					class="btn-close text-reset"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="offcanvas-body position-relative">
+				<!-- Уровень 1: Основное меню -->
+				<div class="mobile-view level-1 active" id="main-menu-view">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Главная</a>
+						</li>
+						<li class="nav-item">
+							<div class="mobile-menu-item" data-view="products-menu-view">
+								<div class="d-flex align-items-center">
+									<span>Продукция</span>
+								</div>
+								<span class="arrow"></span>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="archive-services.html">Услуги</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="archive-product-page.html">Магазин</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="archive-portfolio-2.html">Портфолио</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="archive-news-posts-page.html">Статьи</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="archive-news-posts-page.html">Новости</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">О нас</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contacts.html">Контакты</a>
+						</li>
+
+						<li class="nav-item d-lg-none py-2">
+							<div class="d-flex align-items-center gap-2">
+								<img src="img/ico/location-ico.svg" style="max-height: 14px" />
+								<span style="font-size: 14px"
+									>г. Москва, ул. Полярная, <br />
+									31В, оф. 141</span
+								>
+							</div>
+
+							<a
+								class="top-menu-tel nav-link price-text"
+								style="font-size: 18px"
+								href="tel:+74952450325"
+								>+7 (495) 245-03-25</a
+							>
+							<div class="d-flex align-items-center gap-2">
+								<img src="img/ico/clock-ico.svg" style="max-height: 16px" />
+								<span style="font-size: 14px">
+									Пн-Пт: с 10:00-18:00 <br />
+									Сб, Вс - Выходной
+								</span>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a class="ico-button pe-2" href="https://wa.me/">
+								<img src="img/ico/whatsapp.svg" />
+							</a>
+							<a class="ico-button pe-0" href="https://t.me/+79511014610">
+								<img src="img/ico/telegram.svg" />
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Уровень 2: Меню категорий продукции -->
+				<div class="mobile-view level-2" id="products-menu-view">
+					<h5 class="mobile-view-title">Продукция</h5>
+
+					<!-- Световые короба -->
+					<div class="mobile-menu-item" data-view="1-menu-view">
+						<div class="d-flex align-items-center">
+							<img
+								src="img/ico/menu/megasubmenu-ico-1.svg"
+								alt="Иконка световые короба"
+							/>
+							<span>Световые короба</span>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<!-- Объемные световые буквы -->
+					<div class="mobile-menu-item" data-view="2-menu-view">
+						<div class="d-flex align-items-center">
+							<img
+								src="img/ico/menu/megasubmenu-ico-2.svg"
+								alt="Иконка объемные световые буквы"
+							/>
+							<span>Объемные световые буквы</span>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<!-- Объемные несветовые буквы -->
+					<div class="mobile-menu-item" data-view="3-menu-view">
+						<div class="d-flex align-items-center">
+							<img
+								src="img/ico/menu/megasubmenu-ico-3.svg"
+								alt="Иконка объемные несветовые буквы"
+							/>
+							<span>Объемные несветовые буквы</span>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<!-- Плоские буквы -->
+					<div class="mobile-menu-item" data-view="4-menu-view">
+						<div class="d-flex align-items-center">
+							<img
+								src="img/ico/menu/megasubmenu-ico-4.svg"
+								alt="Иконка плоские буквы"
+							/>
+							<span>Плоские буквы</span>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<!-- Дизайнерские буквы -->
+					<div class="mobile-menu-item" data-view="5-menu-view">
+						<div class="d-flex align-items-center">
+							<img
+								src="img/ico/menu/megasubmenu-ico-5.svg"
+								alt="Иконка дизайнерские буквы"
+							/>
+							<span>Дизайнерские буквы</span>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<!-- Крупноформатные буквы -->
+					<div class="mobile-menu-item" data-view="6-menu-view">
+						<div class="d-flex align-items-center">
+							<img
+								src="img/ico/menu/megasubmenu-ico-6.svg"
+								alt="Иконка крупноформатные буквы"
+							/>
+							<span>Крупноформатные буквы</span>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<!-- Нержавейка -->
+					<div class="mobile-menu-item" data-view="7-menu-view">
+						<div class="d-flex align-items-center">
+							<img src="img/ico/menu/megasubmenu-ico-7.svg" alt="Иконка нержавейка" />
+							<span>Нержавейка</span>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<!-- Панель-кронштейны -->
+					<div class="mobile-menu-item" data-view="8-menu-view">
+						<div class="d-flex align-items-center">
+							<img
+								src="img/ico/menu/megasubmenu-ico-8.svg"
+								alt="Иконка панель-кронштейны"
+							/>
+							<span>Панель-кронштейны</span>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<!-- Стеллы пилоны пиларсы -->
+					<div class="mobile-menu-item" data-view="9-menu-view">
+						<div class="d-flex align-items-center">
+							<img
+								src="img/ico/menu/megasubmenu-ico-9.svg"
+								alt="Иконка стеллы пилоны пиларсы"
+							/>
+							<span>Стеллы пилоны пиларсы</span>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<!-- Штендеры -->
+					<div class="mobile-menu-item" data-view="10-menu-view">
+						<div class="d-flex align-items-center">
+							<img src="img/ico/menu/megasubmenu-ico-10.svg" alt="Иконка штендеры" />
+							<span>Штендеры</span>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<!-- Домовые знаки -->
+					<div class="mobile-menu-item" data-view="11-menu-view">
+						<div class="d-flex align-items-center">
+							<img
+								src="img/ico/menu/megasubmenu-ico-11.svg"
+								alt="Иконка домовые знаки"
+							/>
+							<span>Домовые знаки</span>
+						</div>
+						<span class="arrow"></span>
+					</div>
+
+					<button class="back-button" data-view="main-menu-view">Назад в меню</button>
+				</div>
+
+				<!-- Уровень 3: Подкатегории для Световые короба -->
+				<div class="mobile-view level-3" id="1-menu-view">
+					<a href="archive-product-page.html" class="mobile-view-title h5"
+						>Световые короба</a
+					>
+
+					<!-- Классические -->
+					<div class="mb-4">
+						<h6 class="mb-2">Классические</h6>
+						<ul class="list-unstyled ps-3">
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Металлические</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Алюминиевые</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Пластиковые</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Клееные</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Баннерные</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Композитные -->
+					<div class="mb-4">
+						<h6 class="mb-2">Композитные</h6>
+						<ul class="list-unstyled ps-3">
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Прорезные буквы</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>С инкрустацией</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Инкрустация толстым акрилом</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Тонкие -->
+					<div class="mb-4">
+						<h6 class="mb-2">Тонкие</h6>
+						<ul class="list-unstyled ps-3">
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Фреймлайты</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Кристалайты</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- С дверцей -->
+					<div class="mb-4">
+						<h6 class="mb-2">С дверцей</h6>
+						<ul class="list-unstyled ps-3">
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Меню-боксы (премиум)</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Опен-боксы</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Мини опен-боксы</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Премиум -->
+					<div class="mb-4">
+						<h6 class="mb-2">Премиум</h6>
+						<ul class="list-unstyled ps-3">
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Нержавейка</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Напольные -->
+					<div class="mb-4">
+						<h6 class="mb-2">Напольные</h6>
+						<ul class="list-unstyled ps-3">
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Стационарные</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Передвижные</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- С заменой изображения -->
+					<div class="mb-4">
+						<h6 class="mb-2">С заменой изображения</h6>
+						<ul class="list-unstyled ps-3">
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>С клик-профилем</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Текстильные</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Баннерные</a
+								>
+							</li>
+							<li class="mb-2">
+								<a href="single-product-page.html" class="text-decoration-none"
+									>Клееные с карманом</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<button class="back-button" data-view="products-menu-view">
+						Назад к продукции
+					</button>
+				</div>
+
+				<!-- Уровень 3: Подкатегории для Объемные световые буквы -->
+				<div class="mobile-view level-3" id="2-menu-view">
+					<a href="archive-product-page.html" class="mobile-view-title h5"
+						>Объемные световые буквы</a
+					>
+
+					<div class="mb-4">
+						<p>//TODO: Добавить подкатегории для Объемные световые буквы</p>
+					</div>
+
+					<button class="back-button" data-view="products-menu-view">
+						Назад к продукции
+					</button>
+				</div>
+
+				<!-- Уровень 3: Подкатегории для Объемные несветовые буквы -->
+				<div class="mobile-view level-3" id="3-menu-view">
+					<a href="archive-product-page.html" class="mobile-view-title h5"
+						>Объемные несветовые буквы</a
+					>
+
+					<div class="mb-4">
+						<p>//TODO: Добавить подкатегории для Объемные несветовые буквы</p>
+					</div>
+
+					<button class="back-button" data-view="products-menu-view">
+						Назад к продукции
+					</button>
+				</div>
+
+				<!-- Уровень 3: Подкатегории для Плоские буквы -->
+				<div class="mobile-view level-3" id="4-menu-view">
+					<a href="archive-product-page.html" class="mobile-view-title h5"
+						>Плоские буквы</a
+					>
+
+					<div class="mb-4">
+						<p>//TODO: Добавить подкатегории для Плоские буквы</p>
+					</div>
+
+					<button class="back-button" data-view="products-menu-view">
+						Назад к продукции
+					</button>
+				</div>
+
+				<!-- Уровень 3: Подкатегории для Дизайнерские буквы -->
+				<div class="mobile-view level-3" id="5-menu-view">
+					<a href="archive-product-page.html" class="mobile-view-title h5"
+						>Дизайнерские буквы</a
+					>
+
+					<div class="mb-4">
+						<p>//TODO: Добавить подкатегории для Дизайнерские буквы</p>
+					</div>
+
+					<button class="back-button" data-view="products-menu-view">
+						Назад к продукции
+					</button>
+				</div>
+
+				<!-- Уровень 3: Подкатегории для Крупноформатные буквы  -->
+				<div class="mobile-view level-3" id="6-menu-view">
+					<a href="archive-product-page.html" class="mobile-view-title h5"
+						>Крупноформатные буквы</a
+					>
+
+					<div class="mb-4">
+						<p>//TODO: Добавить подкатегории для Крупноформатные буквы</p>
+					</div>
+
+					<button class="back-button" data-view="products-menu-view">
+						Назад к продукции
+					</button>
+				</div>
+
+				<!-- Уровень 3: Подкатегории для Нержавейка  -->
+				<div class="mobile-view level-3" id="7-menu-view">
+					<a href="archive-product-page.html" class="mobile-view-title h5">Нержавейка</a>
+
+					<div class="mb-4">
+						<p>//TODO: Добавить подкатегории для Нержавейка</p>
+					</div>
+
+					<button class="back-button" data-view="products-menu-view">
+						Назад к продукции
+					</button>
+				</div>
+
+				<!-- Уровень 3: Подкатегории для Панель-кронштейны  -->
+				<div class="mobile-view level-3" id="8-menu-view">
+					<a href="archive-product-page.html" class="mobile-view-title h5"
+						>Панель-кронштейны</a
+					>
+
+					<div class="mb-4">
+						<p>//TODO: Добавить подкатегории для Панель-кронштейны</p>
+					</div>
+
+					<button class="back-button" data-view="products-menu-view">
+						Назад к продукции
+					</button>
+				</div>
+
+				<!-- Уровень 3: Подкатегории для Стеллы пилоны пиларсы  -->
+				<div class="mobile-view level-3" id="9-menu-view">
+					<a href="archive-product-page.html" class="mobile-view-title h5"
+						>Стеллы пилоны пиларсы</a
+					>
+
+					<div class="mb-4">
+						<p>//TODO: Добавить подкатегории для Стеллы пилоны пиларсы</p>
+					</div>
+
+					<button class="back-button" data-view="products-menu-view">
+						Назад к продукции
+					</button>
+				</div>
+
+				<!-- Уровень 3: Подкатегории для Штендеры  -->
+				<div class="mobile-view level-3" id="10-menu-view">
+					<a href="archive-product-page.html" class="mobile-view-title h5">Штендеры</a>
+
+					<div class="mb-4">
+						<p>//TODO: Добавить подкатегории для Штендеры</p>
+					</div>
+
+					<button class="back-button" data-view="products-menu-view">
+						Назад к продукции
+					</button>
+				</div>
+
+				<!-- Уровень 3: Подкатегории для Домовые знаки  -->
+				<div class="mobile-view level-3" id="11-menu-view">
+					<a href="archive-product-page.html" class="mobile-view-title h5"
+						>Домовые знаки</a
+					>
+
+					<div class="mb-4">
+						<p>//TODO: Добавить подкатегории для Домовые знаки</p>
+					</div>
+
+					<button class="back-button" data-view="products-menu-view">
+						Назад к продукции
+					</button>
+				</div>
+			</div>
+		</div>
+
 		<!-- ХЛЕБНЫЕ КРОШКИ/ ЗАГОЛОВОК -->
 		<section class="section-mini">
 			<div class="container">
@@ -897,7 +2124,7 @@
 							<img
 								src="img/content-section-image-1.jpg"
 								alt=""
-								class="img-fluid section-product-list-img"
+								class="img-fluid section-product-list-img card-img-container"
 							/>
 						</div>
 					</div>
@@ -906,7 +2133,7 @@
 		</section>
 
 		<!-- Наши последние работы -->
-		<section class="section section-works section-glide">
+		<section class="section section-works section-glide bg-grey">
 			<div class="container">
 				<div class="section-title text-center">
 					<h3>Наши последние работы</h3>
@@ -917,9 +2144,9 @@
 					<div class="glide__track" data-glide-el="track">
 						<ul class="glide__slides">
 							<li class="glide__slide">
-								<a
-									href="archive-product-cat.html"
-									class="card bg-transparent bg-linear-gradient-wrapper"
+								<div
+									onclick="openProductSlider(0);"
+									class="card bg-transparent bg-linear-gradient-wrapper cursor-pointer"
 								>
 									<div class="card-img-container bg-linear-gradient">
 										<img
@@ -931,13 +2158,13 @@
 									<div class="card-body text-center">
 										<h5 class="card-title">Продукт 1</h5>
 									</div>
-								</a>
+								</div>
 							</li>
 
 							<li class="glide__slide">
-								<a
-									href="archive-product-cat.html"
-									class="card bg-transparent bg-linear-gradient-wrapper"
+								<div
+									onclick="openProductSlider(1);"
+									class="card bg-transparent bg-linear-gradient-wrapper cursor-pointer"
 								>
 									<div class="card-img-container bg-linear-gradient">
 										<img
@@ -949,13 +2176,13 @@
 									<div class="card-body text-center">
 										<h5 class="card-title">Продукт 2</h5>
 									</div>
-								</a>
+								</div>
 							</li>
 
 							<li class="glide__slide">
-								<a
-									href="archive-product-cat.html"
-									class="card bg-transparent bg-linear-gradient-wrapper bg-linear-gradient-wrapper"
+								<div
+									onclick="openProductSlider(2);"
+									class="card bg-transparent bg-linear-gradient-wrapper cursor-pointer"
 								>
 									<div class="card-img-container bg-linear-gradient">
 										<img
@@ -967,7 +2194,7 @@
 									<div class="card-body text-center">
 										<h5 class="card-title">Продукт 3</h5>
 									</div>
-								</a>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -1010,8 +2237,161 @@
 			</div>
 		</section>
 
+		<!-- Модальное окно с общим слайдером -->
+		<div
+			id="productGalleryModal"
+			style="
+				background: rgba(0, 0, 0, 0.85);
+				display: none;
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 9999;
+			"
+		>
+			<!-- Слайдер для всех продуктов -->
+			<div
+				id="products-carousel"
+				class="carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%"
+			>
+				<div class="carousel-inner h-100">
+					<!-- Продукт 1 -->
+					<div class="carousel-item h-100" id="carousel-item-0">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/card/card-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1"
+								/>
+							</div>
+						</div>
+					</div>
+					<!-- Продукт 2 -->
+					<div class="carousel-item h-100" id="carousel-item-1">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/card/card-2.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2"
+								/>
+							</div>
+						</div>
+					</div>
+					<!-- Продукт 3 -->
+					<div class="carousel-item h-100" id="carousel-item-2">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/card/card-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#products-carousel"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						id="indicator-0"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#products-carousel"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+						id="indicator-1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#products-carousel"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+						id="indicator-2"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#products-carousel"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#products-carousel"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Кнопка закрытия галереи -->
+			<button
+				type="button"
+				onclick="closeProductModal();"
+				class="btn-close btn-close-white"
+				style="position: fixed; top: 25px; right: 25px; z-index: 99999"
+				aria-label="Close"
+			></button>
+		</div>
+
+		<script>
+			// Функция открытия модального окна с показом нужного слайда
+			function openProductSlider(slideIndex) {
+				// Показываем модальное окно
+				document.getElementById('productGalleryModal').style.display = 'block';
+
+				// Удаляем класс active со всех слайдов и индикаторов
+				document.querySelectorAll('.carousel-item').forEach(function (item) {
+					item.classList.remove('active');
+				});
+
+				document.querySelectorAll('.carousel-indicators button').forEach(function (button) {
+					button.classList.remove('active');
+					button.removeAttribute('aria-current');
+				});
+
+				// Делаем активным выбранный слайд и соответствующий индикатор
+				document.getElementById('carousel-item-' + slideIndex).classList.add('active');
+				var indicator = document.getElementById('indicator-' + slideIndex);
+				indicator.classList.add('active');
+				indicator.setAttribute('aria-current', 'true');
+
+				// Инициализируем карусель Bootstrap, если необходимо
+				var carousel = new bootstrap.Carousel(document.getElementById('products-carousel'));
+			}
+
+			// Функция закрытия модального окна
+			function closeProductModal() {
+				document.getElementById('productGalleryModal').style.display = 'none';
+			}
+		</script>
+
 		<!-- А еще Вам может пригодиться -->
-		<section class="section section-product-recoment bg-grey">
+		<section class="section section-product-recoment bg-grey box-shadow-main-img">
 			<div class="container">
 				<div class="section-title text-center">
 					<h3>А еще Вам может пригодиться</h3>
@@ -1178,7 +2558,468 @@
 			</div>
 		</section>
 
+		<!-- Частые вопросы -->
+		<section class="section section-faq">
+			<div class="container">
+				<div class="section-title text-center">
+					<h2>Частые вопросы</h2>
+					<img src="img/ico/points.svg" alt="Точки" class="img-fluid" />
+				</div>
+
+				<div class="col-lg-10 text-center mx-auto">
+					<div class="accordion text-start" id="accordionExample">
+						<div class="accordion-item mb-3">
+							<h3 class="accordion-header" id="heading-2">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapse-2"
+									aria-expanded="false"
+									aria-controls="collapse-2"
+								>
+									Есть ли гарантия на ваши изделия?
+								</button>
+							</h3>
+							<div
+								id="collapse-2"
+								class="accordion-collapse collapse"
+								aria-labelledby="heading-2"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Porro, dolore?
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item mb-3">
+							<h3 class="accordion-header" id="heading-1">
+								<button
+									class="accordion-button"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapse-1"
+									aria-expanded="true"
+									aria-controls="collapse-1"
+								>
+									Какой срок изготовления вывески?
+								</button>
+							</h3>
+							<div
+								id="collapse-1"
+								class="accordion-collapse collapse show"
+								aria-labelledby="heading-1"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									<p class="mb-0">
+										Изготовление вывески: 5 - 10 рабочих дней. На другие изделия
+										распространяется этот же срок. Но если возникает
+										необходимость в более коротком сроке, то можем сделать
+										вывеску и в укороченный период.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item mb-3">
+							<h3 class="accordion-header" id="heading-3">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapse-3"
+									aria-expanded="false"
+									aria-controls="collapse-3"
+								>
+									Выезжаете ли вы на замер?
+								</button>
+							</h3>
+							<div
+								id="collapse-3"
+								class="accordion-collapse collapse"
+								aria-labelledby="heading-3"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									<p class="mb-0">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Quidem nisi sint, corrupti magnam ab est impedit officia cum
+										iure quod.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item mb-3">
+							<h3 class="accordion-header" id="heading-4">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapse-4"
+									aria-expanded="false"
+									aria-controls="collapse-4"
+								>
+									Работаете ли вы с бюджетными организациями?
+								</button>
+							</h3>
+							<div
+								id="collapse-4"
+								class="accordion-collapse collapse"
+								aria-labelledby="heading-4"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									<p>Конечно!</p>
+									<p class="mb-0">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Molestias doloremque repellat rerum eveniet explicabo soluta
+										ullam in, facilis vitae iure?
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item mb-3">
+							<h3 class="accordion-header" id="heading-4">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapse-5"
+									aria-expanded="false"
+									aria-controls="collapse-5"
+								>
+									Можете ли вы сделать оформление торговой точки?
+								</button>
+							</h3>
+							<div
+								id="collapse-5"
+								class="accordion-collapse collapse"
+								aria-labelledby="heading-5"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body pb-2">
+									<p class="mb-0">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+										Aperiam necessitatibus sapiente perspiciatis optio, rerum
+										ratione.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item mb-3">
+							<h3 class="accordion-header" id="heading-6">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapse-6"
+									aria-expanded="false"
+									aria-controls="collapse-6"
+								>
+									Можно ли осуществить доставку изделия?
+								</button>
+							</h3>
+							<div
+								id="collapse-6"
+								class="accordion-collapse collapse"
+								aria-labelledby="heading-6"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body pb-2">
+									<p class="mb-0">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Nam vero in inventore quo harum possimus atque quidem
+										commodi velit ab distinctio quaerat totam, obcaecati illum
+										rem ex! Sint, unde laboriosam neque deleniti, reprehenderit
+										blanditiis officiis dolore cumque, nostrum ullam saepe!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- CONTACTS SECTION 4 -->
+		<section class="footer">
+			<!-- Desktop version -->
+			<div class="container py-5 d-none d-xl-block">
+				<div class="row align-items-center">
+					<div class="col-xl-3">
+						<a href="index.html" id="navbar-brand-img">
+							<img src="img/logo.svg" class="img-fluid" />
+						</a>
+					</div>
+					<div class="col-xl-7">
+						<div class="navbar-collapse">
+							<ul
+								class="navbar-nav ms-auto mb-3 mb-lg-0 d-flex flex-row justify-content-center align-items-center"
+							>
+								<li class="nav-item me-3">
+									<div class="d-flex align-items-center gap-3 lh-1">
+										<img src="img/ico/location-ico.svg" />
+										г. Москва, ул. Полярная,<br />
+										31В, оф. 141
+									</div>
+								</li>
+								<li class="nav-item me-3">
+									<div class="d-flex align-items-center gap-3 lh-1">
+										<img src="img/ico/clock-ico.svg" />
+										Пн-Пт: с 10:00-18:00 <br />
+										Сб, Вс - Выходной
+									</div>
+								</li>
+
+								<li class="nav-item me-3">
+									<button
+										class="nav-link d-flex text-start align-items-center gap-3 lh-1"
+										data-bs-toggle="modal"
+										data-bs-target="#callbackModal"
+									>
+										<img src="img/ico/callback-ico.svg" />
+										<span>Обратный звонок</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-2 text-end">
+						<a href="tel:+74952450325" class="top-menu-tel nav-link">
+							<img src="img/ico/mobile-phone-ico.svg" class="me-2" />+7 (495)
+							245-03-25
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col py-4 d-flex justify-content-center align-items-center">
+						<ul class="nav footer-nav align-items-center">
+							<li class="nav-item">
+								<a class="nav-link active" href="index.html">Главная</a>
+							</li>
+
+							<li class="nav-item d-none d-lg-inline">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="archive-services.html">Услуги</a>
+							</li>
+
+							<li class="nav-item d-none d-lg-inline">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="archive-product-page.html">Магазин</a>
+							</li>
+
+							<li class="nav-item d-none d-lg-inline">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="archive-portfolio-2.html">Портфолио</a>
+							</li>
+							<li class="nav-item d-none d-lg-inline">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="archive-news-posts-page.html">Статьи</a>
+							</li>
+							<li class="nav-item d-none d-lg-inline">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="archive-news-posts-page.html">Новости</a>
+							</li>
+							<li class="nav-item d-none d-lg-inline">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">О нас</a>
+							</li>
+							<li class="nav-item d-none d-lg-inline">
+								<img class="nav-link" src="img/ico/menu-decoration-point.svg" />
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row justify-content-center footer-icon">
+					<div class="col">
+						<ul class="nav justify-content-center">
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://whatsapp.com">
+									<img src="img/ico/whatsapp.svg" />
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://telegram.org">
+									<img src="img/ico/telegram.svg" />
+								</a>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link ico-button px-2"
+									href="https://www.instagram.com/"
+								>
+									<img src="img/ico/instagram-ico.svg" />
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="https://vk.com/">
+									<img src="img/ico/vk-ico.svg" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- /Desktop version -->
+
+			<!-- Mobile version -->
+			<div class="container d-xl-none">
+				<div class="row">
+					<div class="col py-5">
+						<a href="index.html" id="navbar-brand-img">
+							<img src="img/logo.svg" class="img-fluid" />
+						</a>
+						<ul class="ps-0 pt-0 pt-md-3 pb-2 navbar-nav">
+							<li class="nav-item">
+								<div class="nav-link ps-0 pb-2">
+									<img src="img/ico/location-ico.svg" class="me-2" />
+									г. Москва, ул. Полярная, 31В, оф. 141
+								</div>
+							</li>
+
+							<li class="nav-item">
+								<div class="nav-link ps-0 py-2">
+									<img src="img/ico/clock-ico.svg" class="me-2" />
+									Пн-Пт: с 10:00-18:00 Сб, Вс - Выходной
+								</div>
+							</li>
+
+							<li class="nav-item">
+								<button
+									class="nav-link ps-0 pt-2"
+									data-bs-toggle="modal"
+									data-bs-target="#callbackModal"
+								>
+									<img src="img/ico/callback-ico.svg" class="me-2" />
+									Обратный звонок
+								</button>
+							</li>
+						</ul>
+						<a href="tel:+74952450325" class="top-menu-tel nav-link">
+							<img
+								src="img/ico/mobile-phone-ico.svg"
+								class="me-2"
+								style="position: relative; bottom: 1px"
+							/>+7 (495) 245-03-25
+						</a>
+						<ul class="nav pt-4 pb-3">
+							<li class="nav-item">
+								<a class="nav-link ico-button ps-0 px-2" href="">
+									<img src="img/ico/whatsapp.svg" />
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="">
+									<img src="img/ico/telegram.svg" />
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="">
+									<img src="img/ico/instagram-ico.svg" />
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link ico-button px-2" href="">
+									<img src="img/ico/vk-ico.svg" />
+								</a>
+							</li>
+						</ul>
+						<div class="row footer-menu footer-menu-mobile">
+							<div class="col-6">
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a class="nav-link ps-0 active" href="index.html"
+											>Главная</a
+										>
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link ps-0" href="archive-services.html"
+											>Услуги</a
+										>
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link ps-0" href="archive-product-page.html"
+											>Магазин</a
+										>
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link ps-0" href="archive-portfolio-2.html"
+											>Портфолио</a
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a class="nav-link ps-0" href="archive-news-posts-page.html"
+											>Статьи</a
+										>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link ps-0" href="archive-news-posts-page.html"
+											>Новости</a
+										>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link ps-0" href="about.html">О нас</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link ps-0" href="contacts.html">Контакты</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr />
+
+			<!-- Footer -->
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col text-start text-md-center">
+							<div id="im-in-footer">
+								Создание, продвижение и поддержка:
+								<a href="https://site100.ru" class="text-decoration-underline"
+									>site100.ru</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
 
 		<!-- Callback Modal -->
 		<div
@@ -1221,13 +3062,22 @@
 							</div>
 						</div>
 					</div>
-					<div class="modal-footer">
-						<button type="submit" class="btn btn-big me-auto">Оставить заявку</button>
+					<div class="modal-footer justify-content-">
+						<div class="row w-100 m-0">
+							<div class="col-md-6 mb-0 p-0">
+								<button type="submit" class="btn btn-big me-auto pe-4 modal-btn">
+									Оставить заявку
+								</button>
+							</div>
+						</div>
 					</div>
 				</form>
 			</div>
 		</div>
 		<!-- /Callback Modal -->
+
+		<!-- JavaScript для работы меню -->
+		<script src="js/mega-menu.js"></script>
 
 		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 
@@ -1235,8 +3085,6 @@
 		<script src="js/jquery-1.5.1.min.js"></script>
 
 		<!-- Menu -->
-		<script src="js/menu-scroll.js"></script>
-
 		<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
 		<script src="js/about/glide-init.js"></script>
