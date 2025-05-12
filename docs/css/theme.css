@@ -1,7 +1,7 @@
 /*** ALL ***/
 :root {
 	--color-accent: linear-gradient(90deg, #e31e24 0%, #e85122 100%);
-	--color-accent-hover: linear-gradient(90deg, #e85122 0%, #e31e24 100%);
+	--color-accent-hover: #e85122;
 
 	--hero-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 
@@ -293,7 +293,7 @@ img {
 }
 
 .btn:hover {
-	color: var(--color-accent);
+	color: var(--color-accent-hover);
 }
 
 .btn:hover::before {
@@ -576,7 +576,7 @@ img {
 
 .header-nav-bottom .nav-link.show,
 .header-nav-bottom .nav-link:hover {
-	color: var(--color-accent);
+	color: var(--color-accent-hover);
 }
 
 .header-nav-bottom .nav-link.active {
@@ -588,7 +588,7 @@ img {
 }
 
 .header-top .dropdown-item.nav-item:hover {
-	color: var(--color-accent);
+	color: var(--color-accent-hover);
 }
 
 .navbar-nav .dropdown-menu .header-top .dropdown-item.nav-item {
@@ -860,7 +860,7 @@ img {
 }
 
 .section-product-list .row a:not(.btn):hover {
-	color: var(--color-accent);
+	color: var(--color-accent-hover);
 }
 
 .section-product-list-img {
@@ -1115,7 +1115,7 @@ img {
 .footer a:hover,
 .footer button:hover,
 .footer button:hover span {
-	color: var(--color-accent) !important;
+	color: var(--color-accent-hover) !important;
 }
 
 .footer .dropdown-toggle::after {
@@ -1198,7 +1198,7 @@ img {
 }
 
 .footer-menu .nav-link:hover {
-	color: var(--color-accent);
+	color: var(--color-accent-hover);
 }
 
 .footer-menu .dropdown-menu .nav-item {
@@ -1447,6 +1447,10 @@ img {
 	transition: color 0.5s;
 }
 
+.section-contacts a:hover {
+	color: var(--color-accent-hover);
+}
+
 .tab-content-product * {
 	font-family: var(--second-family);
 	font-weight: 300;
@@ -1509,7 +1513,7 @@ img {
 
 .header-nav-top button.nav-link:hover,
 .header-nav-top a.nav-link:hover {
-	color: var(--color-accent);
+	color: var(--color-accent-hover);
 }
 
 .nav-item-hero > a {
@@ -1522,7 +1526,7 @@ img {
 }
 
 .nav-item-hero > a:hover {
-	color: var(--color-accent);
+	color: var(--color-accent-hover);
 }
 
 .nav-item-hero > a:has(+ div.show) {
@@ -1580,7 +1584,7 @@ img {
 .category-menu .nav-link:hover,
 .category-menu .nav-link.active {
 	background-color: #f8f9fa;
-	color: var(--color-accent);
+	color: var(--color-accent-hover);
 }
 
 /* Стили для третьего уровня меню */
@@ -1631,7 +1635,7 @@ img {
 }
 
 .subcategory-list a:hover {
-	color: var(--color-accent);
+	color: var(--color-accent-hover);
 }
 
 /* Адаптивность для мобильных устройств */
