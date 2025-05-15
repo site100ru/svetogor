@@ -1309,7 +1309,9 @@
 		</div>
 
 		<!-- Комплексное оформление Вашего бизнеса -->
-		<section class="section section-glide section-comprehensive bg-grey no-border">
+		<section
+			class="section section-glide section-comprehensive bg-grey no-border box-shadow-main"
+		>
 			<div class="container">
 				<div class="section-title text-center">
 					<h3>Комплексное оформление Вашего бизнеса</h3>
@@ -1848,7 +1850,7 @@
 			</div>
 		</section>
 
-		<!-- Модальное окно с общим слайдером -->
+		<!-- Модальные окна для каждого продукта -->
 		<div
 			id="productGalleryModal"
 			style="
@@ -1862,17 +1864,17 @@
 				z-index: 9999;
 			"
 		>
-			<!-- Слайдер для всех продуктов -->
+			<!-- Продукт 1 и его слайдер -->
 			<div
-				id="products-carousel"
-				class="carousel slide"
+				id="product-carousel-0"
+				class="product-carousel carousel slide"
 				data-bs-ride="false"
 				data-bs-interval="false"
-				style="position: fixed; top: 0; height: 100%; width: 100%"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
 			>
 				<div class="carousel-inner h-100">
-					<!-- Продукт 1 -->
-					<div class="carousel-item h-100" id="carousel-item-0">
+					<!-- Изображения продукта 1 -->
+					<div class="carousel-item h-100 active">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
 								<img
@@ -1885,8 +1887,88 @@
 							</div>
 						</div>
 					</div>
-					<!-- Продукт 2 -->
-					<div class="carousel-item h-100" id="carousel-item-1">
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/card/card-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/card/card-2.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-0"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-0"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-0"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-0"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-0"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Продукт 2 и его слайдер -->
+			<div
+				id="product-carousel-1"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<!-- Изображения продукта 2 -->
+					<div class="carousel-item h-100 active">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
 								<img
@@ -1899,8 +1981,88 @@
 							</div>
 						</div>
 					</div>
-					<!-- Продукт 3 -->
-					<div class="carousel-item h-100" id="carousel-item-2">
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/card/card-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/card/card-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-1"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-1"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-1"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-1"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-1"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Продукт 3 и его слайдер -->
+			<div
+				id="product-carousel-2"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<!-- Изображения продукта 3 -->
+					<div class="carousel-item h-100 active">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
 								<img
@@ -1913,36 +2075,61 @@
 							</div>
 						</div>
 					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/card/card-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/card/card-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3.2"
+								/>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="carousel-indicators">
 					<button
 						type="button"
-						data-bs-target="#products-carousel"
+						data-bs-target="#product-carousel-2"
 						data-bs-slide-to="0"
 						aria-label="Slide 1"
-						id="indicator-0"
+						class="active"
+						aria-current="true"
 					></button>
 					<button
 						type="button"
-						data-bs-target="#products-carousel"
+						data-bs-target="#product-carousel-2"
 						data-bs-slide-to="1"
 						aria-label="Slide 2"
-						id="indicator-1"
 					></button>
 					<button
 						type="button"
-						data-bs-target="#products-carousel"
+						data-bs-target="#product-carousel-2"
 						data-bs-slide-to="2"
 						aria-label="Slide 3"
-						id="indicator-2"
 					></button>
 				</div>
 
 				<button
 					class="carousel-control-prev"
 					type="button"
-					data-bs-target="#products-carousel"
+					data-bs-target="#product-carousel-2"
 					data-bs-slide="prev"
 				>
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -1951,7 +2138,7 @@
 				<button
 					class="carousel-control-next"
 					type="button"
-					data-bs-target="#products-carousel"
+					data-bs-target="#product-carousel-2"
 					data-bs-slide="next"
 				>
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -1970,58 +2157,40 @@
 		</div>
 
 		<script>
-			// Функция открытия модального окна с показом нужного слайда
-			function openProductSlider(slideIndex) {
-				// Показываем модальное окно
+			function openProductSlider(productIndex) {
 				document.getElementById('productGalleryModal').style.display = 'block';
 
-				// Удаляем класс active со всех слайдов и индикаторов
-				document.querySelectorAll('.carousel-item').forEach(function (item) {
-					item.classList.remove('active');
+				document.querySelectorAll('.product-carousel').forEach(function (carousel) {
+					carousel.style.display = 'none';
 				});
 
-				document.querySelectorAll('.carousel-indicators button').forEach(function (button) {
-					button.classList.remove('active');
-					button.removeAttribute('aria-current');
-				});
+				var productCarousel = document.getElementById('product-carousel-' + productIndex);
+				productCarousel.style.display = 'block';
 
-				// Делаем активным выбранный слайд и соответствующий индикатор
-				document.getElementById('carousel-item-' + slideIndex).classList.add('active');
-				var indicator = document.getElementById('indicator-' + slideIndex);
-				indicator.classList.add('active');
-				indicator.setAttribute('aria-current', 'true');
+				var carousel = new bootstrap.Carousel(productCarousel);
 
-				// Инициализируем карусель Bootstrap, если необходимо
-				var carousel = new bootstrap.Carousel(document.getElementById('products-carousel'));
-
-				// Добавляем обработчик закрытия по клавише Esc
 				document.addEventListener('keydown', handleEscKeyPress);
 			}
 
-			// Функция закрытия модального окна
 			function closeProductModal() {
 				document.getElementById('productGalleryModal').style.display = 'none';
 
-				// Удаляем обработчик клавиши Esc, когда модальное окно закрыто
+				document.querySelectorAll('.product-carousel').forEach(function (carousel) {
+					carousel.style.display = 'none';
+				});
 				document.removeEventListener('keydown', handleEscKeyPress);
 			}
 
-			// Функция-обработчик нажатия клавиши Esc
 			function handleEscKeyPress(event) {
 				if (event.key === 'Escape' || event.keyCode === 27) {
-					console.log(1);
 					closeProductModal();
 				}
 			}
 
-			// Добавляем обработчик при загрузке страницы
 			document.addEventListener('DOMContentLoaded', function () {
-				// Получаем модальное окно
 				var modal = document.getElementById('productGalleryModal');
 
-				// Закрываем модальное окно при клике на фон (вне слайдера)
 				modal.addEventListener('click', function (event) {
-					// Проверяем, что клик был именно по фону модального окна, а не по его содержимому
 					if (event.target === modal) {
 						closeProductModal();
 					}
@@ -2298,6 +2467,209 @@
 			</div>
 		</section>
 
+		<!-- Оставьте заявку -->
+		<section class="section section-half about-section bg-grey">
+			<div class="d-flex flex-wrap half-bg">
+				<!-- Левая часть с картинкой (скрывается на мобилках) -->
+
+				<div class="right-part d-none d-md-block">
+					<img src="img/about-us.png" alt="Изображение" class="img-cover" />
+				</div>
+
+				<!-- Правая часть с фоном -->
+				<div class="left-part flex-grow-1"></div>
+			</div>
+
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-6 col-lg-7"></div>
+
+					<div class="col-md-6 col-lg-5">
+						<div class="order-description about-description">
+							<h2 class="mb-1">Оставьте заявку</h2>
+
+							<p>
+								И получите смету в день обращения в 2-х ценовых категориях. Мы с
+								радостью обсудим с Вами все детали работы и возникшие вопросы.
+							</p>
+							<img src="img/ico/points.svg" alt="Точки" class="img-fluid" />
+						</div>
+
+						<!-- Начало формы (для Contact Form 7) -->
+						<form class="contact-form" novalidate>
+							<!-- Первая строка: Имя, Телефон, Почта -->
+							<div class="row mb-4">
+								<div class="col-md-4 col-12 mb-3 mb-md-0">
+									<input
+										type="text"
+										class="form-control"
+										name="your-name"
+										placeholder="Имя"
+										required
+									/>
+								</div>
+								<div class="col-md-4 col-12 mb-3 mb-md-0">
+									<input
+										type="tel"
+										class="form-control"
+										name="your-phone"
+										placeholder="Телефон"
+										required
+									/>
+								</div>
+								<div class="col-md-4 col-12">
+									<input
+										type="email"
+										class="form-control"
+										name="your-email"
+										placeholder="Email"
+										required
+									/>
+								</div>
+							</div>
+
+							<!-- Вторая строка: Чекбоксы с картинками -->
+							<div class="row mb-4">
+								<div class="col-md-4 col-12 mb-3 mb-md-0">
+									<label class="image-checkbox-container">
+										<input
+											type="checkbox"
+											name="image-checkbox-1"
+											value="option1"
+										/>
+										<img src="/api/placeholder/80/80" alt="Option 1" />
+									</label>
+								</div>
+								<div class="col-md-4 col-12 mb-3 mb-md-0">
+									<label class="image-checkbox-container">
+										<input
+											type="checkbox"
+											name="image-checkbox-2"
+											value="option2"
+										/>
+										<img src="/api/placeholder/80/80" alt="Option 2" />
+									</label>
+								</div>
+								<div class="col-md-4 col-12">
+									<label class="image-checkbox-container">
+										<input
+											type="checkbox"
+											name="image-checkbox-3"
+											value="option3"
+										/>
+										<img src="/api/placeholder/80/80" alt="Option 3" />
+									</label>
+								</div>
+							</div>
+
+							<!-- Третья строка: Текст + Селект -->
+							<div class="row mb-4">
+								<div class="col-md-8 col-12">
+									<label class="form-label">Выберите опцию:</label>
+									<select class="form-select" name="your-select" required>
+										<option value="" selected></option>
+										<option value="option1">Опция 1</option>
+										<option value="option2">Опция 2</option>
+										<option value="option3">Опция 3</option>
+										<option value="option4">Опция 4</option>
+									</select>
+								</div>
+							</div>
+
+							<!-- Четвертая строка: Текстареа -->
+							<div class="row mb-4">
+								<div class="col-12">
+									<textarea
+										class="form-control"
+										name="your-message"
+										rows="4"
+										placeholder="Ваше сообщение"
+									></textarea>
+								</div>
+							</div>
+
+							<!-- Пятая строка: Текстовые чекбоксы -->
+							<div class="row mb-4">
+								<div class="col-12">
+									<label class="form-label">Выберите варианты:</label>
+									<div class="row">
+										<div class="col-md-3 col-6 mb-2">
+											<div class="text-checkbox">
+												<input
+													type="checkbox"
+													name="text-checkbox-1"
+													id="text-checkbox-1"
+													value="text-option1"
+												/>
+												<label for="text-checkbox-1">Вариант 1</label>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 mb-2">
+											<div class="text-checkbox">
+												<input
+													type="checkbox"
+													name="text-checkbox-2"
+													id="text-checkbox-2"
+													value="text-option2"
+												/>
+												<label for="text-checkbox-2">Вариант 2</label>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 mb-2">
+											<div class="text-checkbox">
+												<input
+													type="checkbox"
+													name="text-checkbox-3"
+													id="text-checkbox-3"
+													value="text-option3"
+												/>
+												<label for="text-checkbox-3">Вариант 3</label>
+											</div>
+										</div>
+										<div class="col-md-3 col-6 mb-2">
+											<div class="text-checkbox">
+												<input
+													type="checkbox"
+													name="text-checkbox-4"
+													id="text-checkbox-4"
+													value="text-option4"
+												/>
+												<label for="text-checkbox-4">Вариант 4</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Шестая строка: Прикрепить файл -->
+							<div class="row mb-4">
+								<div class="col-md-4 col-12">
+									<div class="file-upload-wrapper">
+										<button
+											type="button"
+											class="btn btn-outline-primary file-upload-btn"
+										>
+											Прикрепить файл
+										</button>
+										<input type="file" name="your-file" class="file-upload" />
+									</div>
+								</div>
+							</div>
+
+							<!-- Седьмая строка: Кнопка отправить -->
+							<div class="row">
+								<div class="col-md-4 col-12">
+									<button type="submit" class="btn btn-primary w-100">
+										Отправить
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- Частые вопросы -->
 		<section class="section section-faq">
 			<div class="container">
@@ -2488,34 +2860,34 @@
 		<!-- О нас -->
 		<section class="section section-half about-section bg-grey">
 			<div class="d-flex flex-wrap half-bg">
-				<!-- Левая часть с фоном -->
-				<div class="left-part flex-grow-1"></div>
-
-				<!-- Правая часть с картинкой (скрывается на мобилках) -->
+				<!-- Левая часть с картинкой (скрывается на мобилках) -->
 				<div class="right-part d-none d-md-block">
-					<img src="img/order-bg.jpg" alt="Изображение" class="img-cover" />
+					<img src="img/about-us-two.png" alt="Изображение" class="img-cover" />
 				</div>
+				<!-- Правая часть с фоном -->
+				<div class="left-part flex-grow-1"></div>
 			</div>
 
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-md-6 col-lg-5 text-md-end">
+					<div class="col-md-6 col-lg-7"></div>
+					<div class="col-md-6 col-lg-5">
 						<h2 class="mb-1">О нас</h2>
 
 						<img src="img/ico/points.svg" alt="Точки" class="img-fluid" />
 						<br />
 						<div class="order-description about-description">
 							<p>
-								Оставьте заявку и мы свяжемся с Вами в течение рабочего дня или
-								напишите нам в мессенджер и мы проконсультируем Вас по всем вопросам
-								касающимся нашей продукции.
+								Рекламно-производственная компания «РЕКЛАМЕН» образована в мае
+								2000г. Более 20 лет мы успешно работаем на российском рынке рекламы.
+								Нашей основной сферой деятельности является предоставление услуг по
+								наружному и интерьерному рекламному оформлению магазинов розничных
+								торговых сетей.
 							</p>
 						</div>
 
 						<a href="about.html" class="btn mb-0 mb-md-4 btn-big"> Подробнее </a>
 					</div>
-
-					<div class="col-md-6 col-lg-7"></div>
 				</div>
 			</div>
 		</section>

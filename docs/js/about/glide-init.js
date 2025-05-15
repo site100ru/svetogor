@@ -23,127 +23,126 @@
  * Скрипт выполняется после полной загрузки DOM.
  */
 
-
 document.addEventListener('DOMContentLoaded', function () {
-  const partnersGlide = document.querySelector('#partners-glide');
-  const sectionWorks = document.querySelector("#section-works");
-  const sectionProduct = document.querySelector("#section-product")
-  const clientsGlide = document.querySelector("#clients-glide");
+  const initGlide = function (selector, options) {
+    try {
+      const element = document.querySelector(selector);
+      if (element) {
+        const glide = new Glide(selector, options);
+        glide.mount();
+        console.log(`Слайдер ${selector} успешно инициализирован`);
+        return glide;
+      } else {
+        console.log(`Элемент ${selector} не найден на странице`);
+      }
+    } catch (error) {
+      console.error(`Ошибка при инициализации слайдера ${selector}:`, error);
+    }
+    return null;
+  };
 
-  const contourSlider = document.querySelector("#slider-contour");
-  const lightFaceAndEndsSlider = document.querySelector("#slider-light-face-and-ends");
-  const lightFaceSlider = document.querySelector("#slider-light-face");
-
-  if (partnersGlide) {
-    new Glide(partnersGlide, {
-      type: 'carousel',
-      perView: 4,
-      gap: 24,
-      breakpoints: {
-        992: {
-          perView: 3,
-        },
-        768: {
-          perView: 1,
-        },
+  // Инициализация partners-glide
+  initGlide('#partners-glide', {
+    type: 'carousel',
+    perView: 4,
+    gap: 24,
+    breakpoints: {
+      992: {
+        perView: 3,
       },
-    }).mount();
-  }
-
-  if (sectionWorks) {
-    new Glide(sectionWorks, {
-      type: 'carousel',
-      perView: 3,
-      gap: 24,
-      breakpoints: {
-        992: {
-          perView: 2,
-        },
-        768: {
-          perView: 1,
-        },
+      768: {
+        perView: 1,
       },
-    }).mount();
-  }
+    }
+  });
 
-  if (sectionProduct) {
-    new Glide(sectionProduct, {
-      type: 'carousel',
-      perView: 3,
-      gap: 24,
-      breakpoints: {
-        992: {
-          perView: 2,
-        },
-        768: {
-          perView: 1,
-        },
+  // Инициализация section-works
+  initGlide('#section-works', {
+    type: 'carousel',
+    perView: 3,
+    gap: 24,
+    breakpoints: {
+      992: {
+        perView: 2,
       },
-    }).mount();
-  }
+      768: {
+        perView: 1,
+      },
+    }
+  });
 
-  if (clientsGlide) {
-    new Glide(clientsGlide, {
-      type: 'carousel',
-      perView: 6,
-      gap: 24,
-      breakpoints: {
-        1400: {
-          perView: 5,
-        },
-        1200: {
-          perView: 4,
-        },
-        992: {
-          perView: 3,
-        },
-        768: {
-          perView: 2,
-        },
-        590: {
-          perView: 1,
-        },
+  // Инициализация section-product
+  initGlide('#section-product', {
+    type: 'carousel',
+    perView: 3,
+    gap: 24,
+    breakpoints: {
+      992: {
+        perView: 2,
       },
-    }).mount();
-  }
+      768: {
+        perView: 1,
+      },
+    }
+  });
 
-  if (lightFaceSlider) {
-    new Glide(lightFaceSlider, {
-      type: 'carousel',
-      perView: 2,
-      gap: 24,
-      breakpoints: {
-        767: {
-          perView: 1,
-        },
+  // Инициализация clients-glide
+  initGlide('#clients-glide', {
+    type: 'carousel',
+    perView: 6,
+    gap: 24,
+    breakpoints: {
+      1400: {
+        perView: 5,
       },
-    }).mount();
-  }
+      1200: {
+        perView: 4,
+      },
+      992: {
+        perView: 3,
+      },
+      768: {
+        perView: 2,
+      },
+      590: {
+        perView: 1,
+      },
+    }
+  });
 
-  if (contourSlider) {
-    new Glide(contourSlider, {
-      type: 'carousel',
-      perView: 2,
-      gap: 24,
-      breakpoints: {
-        767: {
-          perView: 1,
-        },
+  // Инициализация slider-light-face
+  initGlide('#slider-light-face', {
+    type: 'carousel',
+    perView: 2,
+    gap: 24,
+    breakpoints: {
+      767: {
+        perView: 1,
       },
-    }).mount();
-  }
+    }
+  });
 
-  if (lightFaceAndEndsSlider) {
-    new Glide(lightFaceAndEndsSlider, {
-      type: 'carousel',
-      perView: 2,
-      gap: 24,
-      breakpoints: {
-        767: {
-          perView: 1,
-        },
+  // Инициализация slider-contour
+  initGlide('#slider-contour', {
+    type: 'carousel',
+    perView: 2,
+    gap: 24,
+    breakpoints: {
+      767: {
+        perView: 1,
       },
-    }).mount();
-  }
+    }
+  });
+
+  // Инициализация slider-light-face-and-ends
+  initGlide('#slider-light-face-and-ends', {
+    type: 'carousel',
+    perView: 2,
+    gap: 24,
+    breakpoints: {
+      767: {
+        perView: 1,
+      },
+    }
+  });
 });
-

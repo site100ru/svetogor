@@ -20,6 +20,8 @@
 body {
 	color: #323232;
 	font-family: var(--font-family);
+	padding-right: 0px !important;
+	overflow: visible !important;
 }
 
 /*** END ALL ***/
@@ -129,7 +131,7 @@ img {
 		rgba(0, 0, 0, 0.75) 100%
 	);
 	opacity: 1;
-	transition: opacity 0.3s;
+	transition: opacity 0.5s;
 }
 
 .bg-linear-gradient-wrapper:hover .card-img-container::after,
@@ -217,7 +219,7 @@ img {
 	display: block;
 	width: 100%;
 
-	transition: transform 0.3s ease;
+	transition: transform 0.5s ease;
 	border-radius: 0;
 }
 
@@ -243,7 +245,7 @@ img {
 }
 
 .breadcrumb-item a {
-	transition: color 0.3s ease;
+	transition: color 0.5s ease;
 	color: #7d7d7d;
 }
 
@@ -279,7 +281,7 @@ img {
 	overflow: hidden;
 	z-index: 1;
 	background: linear-gradient(90deg, #e31e24 0%, #e85122 100%);
-	transition: color 0.5s, background 0.5s;
+	transition: color 0.5s;
 }
 
 .btn::before {
@@ -288,7 +290,7 @@ img {
 	inset: 0;
 	background: #fff;
 	opacity: 0;
-	transition: opacity 0.5s;
+	transition: opacity 0.5s ease; /* Увеличено до 4 секунд и добавлен ease */
 	z-index: -1;
 }
 
@@ -310,19 +312,18 @@ img {
 	background: transparent;
 	color: var(--bs-btn-color);
 	border: 1px solid var(--bs-btn-border-color);
-	transition: background 0.5s, color 0.5s, border-color 0.5s;
 }
 
 .btn-invert::before {
 	background: var(--color-accent);
+	transition: opacity 0.7s ease; /* Увеличено до 4 секунд и добавлен ease */
 }
 
 .btn-invert:hover {
-	background: var(--color-accent);
 	color: #fff;
 	border-color: var(--color-accent);
+	transition: color 0.5s, border-color 0.5s;
 }
-
 .btn-min {
 	--bs-btn-padding-x: 2.1875rem;
 	--bs-btn-padding-y: 0.5rem;
@@ -643,7 +644,7 @@ img {
 	z-index: 1050;
 	transform: translateY(-100%);
 	opacity: 0;
-	transition: transform 0.4s ease, opacity 0.4s ease;
+	transition: transform 0.5s ease, opacity 0.5s ease;
 	pointer-events: none;
 	background-color: white;
 }
@@ -758,8 +759,9 @@ img {
 		background-color: #fff;
 	}
 
-	.header-nav-bottom .navbar-brand img {
+	.navbar-brand img {
 		max-width: 170px;
+		height: 50px;
 	}
 
 	#sliding-header .top-menu-tel,
@@ -856,7 +858,7 @@ img {
 
 .section-product-list .row a:not(.btn) {
 	color: #323232;
-	transition: color 0.3s;
+	transition: color 0.5s;
 }
 
 .section-product-list .row a:not(.btn):hover {
@@ -1202,7 +1204,7 @@ img {
 }
 
 .footer-menu .dropdown-menu .nav-item {
-	transition: all 0.3s;
+	transition: all 0.5s;
 }
 
 .footer-menu .dropdown-menu .nav-item:hover {
@@ -1292,7 +1294,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 
 .gallery-2691:hover .overlay,
@@ -1331,7 +1333,7 @@ img {
 
 #callbackModal .btn-corporate-color-1 {
 	background-color: var(--color-accent);
-	transition: all 0.3s;
+	transition: all 0.5s;
 }
 
 #callbackModal .btn-corporate-color-1:hover {
@@ -1539,6 +1541,12 @@ img {
 	box-shadow: var(--hero-box-shadow);
 }
 
+@media (max-width: 992px) {
+	.navbar {
+		padding: 0;
+	}
+}
+
 /* Исправляем позиционирование для мега-меню, чтобы оно растягивалось на всю ширину */
 .nav-item.dropdown {
 	position: static !important;
@@ -1563,7 +1571,7 @@ img {
 	color: #4b4b4b;
 	padding: 12px 16px;
 	border-radius: 4px;
-	transition: all 0.2s;
+	transition: all 0.5s;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1612,6 +1620,7 @@ img {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	margin-top: 15px;
 }
 
 .subcategory-list li {
@@ -1627,7 +1636,7 @@ img {
 
 .subcategory-list a {
 	text-decoration: none;
-	transition: all 0.2s;
+	transition: all 0.5s;
 
 	font-weight: 400;
 	color: #4b4b4b;
@@ -1681,7 +1690,7 @@ img {
 	top: 0;
 	left: 0;
 	background-color: white;
-	transition: transform 0.3s ease;
+	transition: transform 0.5s ease;
 	padding: 15px;
 	overflow-y: auto;
 	color: #4b4b4b;
@@ -1744,6 +1753,10 @@ img {
 	color: #4b4b4b;
 }
 
+.mobile-view.level-3 ul a:hover {
+	color: var(--color-accent-hover);
+}
+
 .mobile-view.active {
 	transform: translateX(0);
 }
@@ -1774,10 +1787,17 @@ img {
 	bottom: -6px;
 	background-color: transparent;
 }
+.navbar-fixed .nav-item.dropdown::after {
+	height: 30px;
+}
 
 @media (max-width: 1400px) {
+	.navbar-fixed .nav-item.dropdown::after {
+		height: 10px;
+	}
+
 	.nav-item.dropdown::after {
-		height: 20px;
+		height: 30px;
 	}
 }
 
@@ -1801,7 +1821,7 @@ img {
 	font-weight: 500;
 	margin-top: 15px;
 	border-radius: 4px;
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 	position: relative;
 	padding-left: 35px; /* Дополнительное пространство для стрелки */
 }
@@ -1818,7 +1838,7 @@ img {
 	background-repeat: no-repeat;
 	background-position: center;
 	transform: translateY(-50%) rotate(180deg); /* Поворачиваем стрелку влево */
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 }
 
 .back-button:hover {
@@ -1850,7 +1870,7 @@ img {
 	background-image: url('../img/ico/menu/arrow-menu.svg');
 	background-repeat: no-repeat;
 	background-position: center;
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 	font-style: normal;
 	font-size: 0;
 	display: inline-block;
@@ -1869,7 +1889,7 @@ img {
 	background-image: url('../img/ico/menu/arrow-menu.svg');
 	background-repeat: no-repeat;
 	background-position: center;
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 	font-style: normal;
 	font-size: 0;
 	display: inline-block;
@@ -1894,6 +1914,13 @@ img {
 	background-color: white;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для выделения панели при скролле */
 	animation: slideDown 0.3s ease-out; /* Анимация появления */
+	padding: 0px;
+}
+
+@media (max-width: 560px) {
+	.navbar-fixed .navbar-brand img {
+		height: 50px;
+	}
 }
 
 /* Класс для контейнера-заполнителя, чтобы избежать прыжка контента */
