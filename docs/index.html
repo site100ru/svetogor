@@ -2496,23 +2496,20 @@
 		</section>
 
 		<!-- Оставьте заявку -->
-		<section class="section section-half about-section bg-grey">
-			<div class="d-flex flex-wrap half-bg">
-				<!-- Левая часть с картинкой (скрывается на мобилках) -->
+		<section class="section section-half section-call">
+			<div class="d-flex flex-wrap half-bg flex-row-reverse">
+				<!-- Левая часть с фоном -->
+				<div class="left-part flex-grow-1"></div>
 
-				<div class="right-part d-none d-md-block">
+				<!-- Правая часть с картинкой (скрывается на мобилках) -->
+				<div class="right-part d-none d-lg-block">
 					<img src="img/about-us.png" alt="Изображение" class="img-cover" />
 				</div>
-
-				<!-- Правая часть с фоном -->
-				<div class="left-part flex-grow-1"></div>
 			</div>
 
 			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-6 col-lg-7"></div>
-
-					<div class="col-md-6 col-lg-5">
+				<div class="row justify-content-center flex-row-reverse section-call-content">
+					<div class="col-lg-7">
 						<div class="order-description about-description">
 							<h2 class="mb-1">Оставьте заявку</h2>
 
@@ -2528,29 +2525,35 @@
 							<!-- Первая строка: Имя, Телефон, Почта -->
 							<div class="row mb-4">
 								<div class="col-md-4 col-12 mb-3 mb-md-0">
+									<label for="tel-input" class="form-label">Имя</label>
+
 									<input
 										type="text"
 										class="form-control"
 										name="your-name"
-										placeholder="Имя"
+										id="name-input"
 										required
 									/>
 								</div>
 								<div class="col-md-4 col-12 mb-3 mb-md-0">
+									<label for="tel-input" class="form-label">Телефон</label>
+
 									<input
 										type="tel"
 										class="form-control"
 										name="your-phone"
-										placeholder="Телефон"
+										id="phone-input"
 										required
 									/>
 								</div>
 								<div class="col-md-4 col-12">
+									<label for="tel-input" class="form-label">Email</label>
+
 									<input
 										type="email"
 										class="form-control"
 										name="your-email"
-										placeholder="Email"
+										id="email-input"
 										required
 									/>
 								</div>
@@ -2558,34 +2561,35 @@
 
 							<!-- Вторая строка: Чекбоксы с картинками -->
 							<div class="row mb-4">
-								<div class="col-md-4 col-12 mb-3 mb-md-0">
+								<p>Хочу получить расчет на:</p>
+
+								<div class="d-flex gap-4">
 									<label class="image-checkbox-container">
 										<input
 											type="checkbox"
 											name="image-checkbox-1"
 											value="option1"
 										/>
-										<img src="/api/placeholder/80/80" alt="Option 1" />
+										<span class="custom-checkbox"></span>
+										<img src="img/ico/whatsapp.svg" alt="Option 1" />
 									</label>
-								</div>
-								<div class="col-md-4 col-12 mb-3 mb-md-0">
 									<label class="image-checkbox-container">
 										<input
 											type="checkbox"
 											name="image-checkbox-2"
 											value="option2"
 										/>
-										<img src="/api/placeholder/80/80" alt="Option 2" />
+										<span class="custom-checkbox"></span>
+										<img src="img/ico/telegram.svg" alt="Option 2" />
 									</label>
-								</div>
-								<div class="col-md-4 col-12">
 									<label class="image-checkbox-container">
 										<input
 											type="checkbox"
 											name="image-checkbox-3"
 											value="option3"
 										/>
-										<img src="/api/placeholder/80/80" alt="Option 3" />
+										<span class="custom-checkbox"></span>
+										<img src="img/ico/message.svg" alt="Option 3" />
 									</label>
 								</div>
 							</div>
@@ -2593,110 +2597,129 @@
 							<!-- Третья строка: Текст + Селект -->
 							<div class="row mb-4">
 								<div class="col-md-8 col-12">
-									<label class="form-label">Выберите опцию:</label>
-									<select class="form-select" name="your-select" required>
+									<label class="form-label">Тип продукции</label>
+									<select
+										class="form-select form-control"
+										name="your-select"
+										required
+									>
 										<option value="" selected></option>
-										<option value="option1">Опция 1</option>
-										<option value="option2">Опция 2</option>
-										<option value="option3">Опция 3</option>
-										<option value="option4">Опция 4</option>
+										<option value="option1">Буквы</option>
+										<option value="option2">Крышные установки</option>
+										<option value="option3">Конструкции для выставок</option>
+										<option value="option4">Тонкие световые панели</option>
+										<option value="option5">
+											Стеллы, пилоны, доски почета
+										</option>
+										<option value="option6">Опен-боксы для афиш, меню</option>
+										<option value="option7">Световые короба</option>
+										<option value="option8">Панель-кронштейны</option>
+										<option value="option9">Домовые знаки</option>
+										<option value="option10">Светильники</option>
+										<option value="option11">Штендеры, ролл-апы</option>
+										<option value="option12">Таблички, стенды</option>
+										<option value="option13">Уличные информстенды</option>
+										<option value="option14">Торговые точки</option>
+										<option value="option15">Неоновая реклама</option>
+										<option value="option16">Услуги</option>
 									</select>
 								</div>
 							</div>
 
 							<!-- Четвертая строка: Текстареа -->
 							<div class="row mb-4">
+								<p class="mb-2">Размеры, материалы и другие детали</p>
 								<div class="col-12">
 									<textarea
 										class="form-control"
 										name="your-message"
 										rows="4"
-										placeholder="Ваше сообщение"
 									></textarea>
 								</div>
 							</div>
 
 							<!-- Пятая строка: Текстовые чекбоксы -->
 							<div class="row mb-4">
-								<div class="col-12">
-									<label class="form-label">Выберите варианты:</label>
-									<div class="row">
-										<div class="col-md-3 col-6 mb-2">
-											<div class="text-checkbox">
-												<input
-													type="checkbox"
-													name="text-checkbox-1"
-													id="text-checkbox-1"
-													value="text-option1"
-												/>
-												<label for="text-checkbox-1">Вариант 1</label>
-											</div>
-										</div>
-										<div class="col-md-3 col-6 mb-2">
-											<div class="text-checkbox">
-												<input
-													type="checkbox"
-													name="text-checkbox-2"
-													id="text-checkbox-2"
-													value="text-option2"
-												/>
-												<label for="text-checkbox-2">Вариант 2</label>
-											</div>
-										</div>
-										<div class="col-md-3 col-6 mb-2">
-											<div class="text-checkbox">
-												<input
-													type="checkbox"
-													name="text-checkbox-3"
-													id="text-checkbox-3"
-													value="text-option3"
-												/>
-												<label for="text-checkbox-3">Вариант 3</label>
-											</div>
-										</div>
-										<div class="col-md-3 col-6 mb-2">
-											<div class="text-checkbox">
-												<input
-													type="checkbox"
-													name="text-checkbox-4"
-													id="text-checkbox-4"
-													value="text-option4"
-												/>
-												<label for="text-checkbox-4">Вариант 4</label>
-											</div>
-										</div>
-									</div>
+								<p class="form-label">Так же мне нужно:</p>
+								<div class="col-12 d-flex gap-4">
+									<label class="custom-checkbox-container">
+										<input
+											type="checkbox"
+											name="text-checkbox-1"
+											value="text-option1"
+										/>
+										<span class="custom-checkbox"></span>
+										<span>Выезд на замер</span>
+									</label>
+									<label class="custom-checkbox-container">
+										<input
+											type="checkbox"
+											name="text-checkbox-2"
+											value="text-option2"
+										/>
+										<span class="custom-checkbox"></span>
+										<span>Разработка дизайна</span>
+									</label>
+									<label class="custom-checkbox-container">
+										<input
+											type="checkbox"
+											name="text-checkbox-3"
+											value="text-option3"
+										/>
+										<span class="custom-checkbox"></span>
+										<span>Монтаж</span>
+									</label>
+									<label class="custom-checkbox-container">
+										<input
+											type="checkbox"
+											name="text-checkbox-4"
+											value="text-option4"
+										/>
+										<span class="custom-checkbox"></span>
+										<span>Доставка</span>
+									</label>
 								</div>
 							</div>
 
 							<!-- Шестая строка: Прикрепить файл -->
 							<div class="row mb-4">
-								<div class="col-md-4 col-12">
-									<div class="file-upload-wrapper">
-										<button
-											type="button"
-											class="btn btn-outline-primary file-upload-btn"
-										>
+								<div class="col-md-6 col-xl-4 col-12">
+									<div class="file-upload-wrapper w-100">
+										<button type="button" class="btn btn-invert btn-big file-upload-btn">
 											Прикрепить файл
 										</button>
 										<input type="file" name="your-file" class="file-upload" />
+										<span class="file-name">Файл не прикреплен</span>
 									</div>
 								</div>
 							</div>
 
 							<!-- Седьмая строка: Кнопка отправить -->
 							<div class="row">
-								<div class="col-md-4 col-12">
-									<button type="submit" class="btn btn-primary w-100">
-										Отправить
-									</button>
+								<div class="col-md-6 col-xl-4 col-12">
+									<button type="submit" class="btn w-100">Отправить</button>
 								</div>
 							</div>
 						</form>
+						<!-- Конец формы -->
 					</div>
+
+					<div class="col-lg-5"></div>
 				</div>
 			</div>
 		</section>
+
+		<script>
+			// Скрипт для отображения имени файла после выбора
+			document.querySelector('.file-upload').addEventListener('change', function (e) {
+				const fileName = document.querySelector('.file-name');
+				if (e.target.files.length > 0) {
+					fileName.textContent = e.target.files[0].name;
+				} else {
+					fileName.textContent = '';
+				}
+			});
+		</script>
 
 		<!-- Частые вопросы -->
 		<section class="section section-faq">
