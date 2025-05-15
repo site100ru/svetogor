@@ -1305,7 +1305,6 @@
 				</nav>
 			</div>
 		</section>
-
 		<!-- КОНТЕНТ -->
 		<section class="section section-portfolio">
 			<div class="container">
@@ -1637,7 +1636,7 @@
 			</div>
 		</section>
 
-		<!-- Модальное окно с общим слайдером для всех продуктов -->
+		<!-- Модальное окно для галереи продуктов -->
 		<div
 			id="productGalleryModal"
 			style="
@@ -1651,17 +1650,17 @@
 				z-index: 9999;
 			"
 		>
-			<!-- Слайдер для всех продуктов -->
+			<!-- Слайдеры для каждого продукта -->
+			<!-- Слайдер для продукта 1 -->
 			<div
-				id="products-carousel"
-				class="carousel slide"
+				id="product-carousel-0"
+				class="product-carousel carousel slide"
 				data-bs-ride="false"
 				data-bs-interval="false"
-				style="position: fixed; top: 0; height: 100%; width: 100%"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
 			>
 				<div class="carousel-inner h-100">
-					<!-- Продукт 1 -->
-					<div class="carousel-item h-100" id="carousel-item-0">
+					<div class="carousel-item h-100 active">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
 								<img
@@ -1674,8 +1673,87 @@
 							</div>
 						</div>
 					</div>
-					<!-- Продукт 2 -->
-					<div class="carousel-item h-100" id="carousel-item-1">
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-0"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-0"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-0"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-0"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-0"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 2 -->
+			<div
+				id="product-carousel-1"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
 								<img
@@ -1688,8 +1766,87 @@
 							</div>
 						</div>
 					</div>
-					<!-- Продукт 3 -->
-					<div class="carousel-item h-100" id="carousel-item-2">
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-1"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-1"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-1"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-1"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-1"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 3 -->
+			<div
+				id="product-carousel-2"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
 								<img
@@ -1702,8 +1859,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- Продукт 4 -->
-					<div class="carousel-item h-100" id="carousel-item-3">
+					<div class="carousel-item h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
 								<img
@@ -1711,41 +1867,12 @@
 									class="img-fluid"
 									loading="lazy"
 									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 4"
+									alt="Продукт 3.1"
 								/>
 							</div>
 						</div>
 					</div>
-					<!-- Продукт 5 -->
-					<div class="carousel-item h-100" id="carousel-item-4">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img
-									src="img/portfolio/portfolio-5.jpg"
-									class="img-fluid"
-									loading="lazy"
-									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 5"
-								/>
-							</div>
-						</div>
-					</div>
-					<!-- Продукт 6 -->
-					<div class="carousel-item h-100" id="carousel-item-5">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img
-									src="img/portfolio/portfolio-1.jpg"
-									class="img-fluid"
-									loading="lazy"
-									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 6"
-								/>
-							</div>
-						</div>
-					</div>
-					<!-- Продукт 7 -->
-					<div class="carousel-item h-100" id="carousel-item-6">
+					<div class="carousel-item h-100">
 						<div class="row align-items-center h-100">
 							<div class="col text-center">
 								<img
@@ -1753,119 +1880,7 @@
 									class="img-fluid"
 									loading="lazy"
 									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 7"
-								/>
-							</div>
-						</div>
-					</div>
-					<!-- Продукт 8 -->
-					<div class="carousel-item h-100" id="carousel-item-7">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img
-									src="img/portfolio/portfolio-3.jpg"
-									class="img-fluid"
-									loading="lazy"
-									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 8"
-								/>
-							</div>
-						</div>
-					</div>
-					<!-- Продукт 9 -->
-					<div class="carousel-item h-100" id="carousel-item-8">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img
-									src="img/portfolio/portfolio-4.jpg"
-									class="img-fluid"
-									loading="lazy"
-									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 9"
-								/>
-							</div>
-						</div>
-					</div>
-					<!-- Продукт 10 -->
-					<div class="carousel-item h-100" id="carousel-item-9">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img
-									src="img/portfolio/portfolio-5.jpg"
-									class="img-fluid"
-									loading="lazy"
-									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 10"
-								/>
-							</div>
-						</div>
-					</div>
-					<!-- Продукт 11 -->
-					<div class="carousel-item h-100" id="carousel-item-10">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img
-									src="img/portfolio/portfolio-2.jpg"
-									class="img-fluid"
-									loading="lazy"
-									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 11"
-								/>
-							</div>
-						</div>
-					</div>
-					<!-- Продукт 12 -->
-					<div class="carousel-item h-100" id="carousel-item-11">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img
-									src="img/portfolio/portfolio-3.jpg"
-									class="img-fluid"
-									loading="lazy"
-									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 12"
-								/>
-							</div>
-						</div>
-					</div>
-					<!-- Продукт 13 -->
-					<div class="carousel-item h-100" id="carousel-item-12">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img
-									src="img/portfolio/portfolio-4.jpg"
-									class="img-fluid"
-									loading="lazy"
-									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 13"
-								/>
-							</div>
-						</div>
-					</div>
-					<!-- Продукт 14 -->
-					<div class="carousel-item h-100" id="carousel-item-13">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img
-									src="img/portfolio/portfolio-5.jpg"
-									class="img-fluid"
-									loading="lazy"
-									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 14"
-								/>
-							</div>
-						</div>
-					</div>
-					<!-- Продукт 15 -->
-					<div class="carousel-item h-100" id="carousel-item-14">
-						<div class="row align-items-center h-100">
-							<div class="col text-center">
-								<img
-									src="img/portfolio/portfolio-3.jpg"
-									class="img-fluid"
-									loading="lazy"
-									style="max-width: 75vw; max-height: 75vh"
-									alt="Продукт 15"
+									alt="Продукт 3.2"
 								/>
 							</div>
 						</div>
@@ -1873,118 +1888,32 @@
 				</div>
 
 				<div class="carousel-indicators">
-					<!-- Индикаторы для всех слайдов -->
 					<button
 						type="button"
-						data-bs-target="#products-carousel"
+						data-bs-target="#product-carousel-2"
 						data-bs-slide-to="0"
-						id="indicator-0"
 						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
 					></button>
 					<button
 						type="button"
-						data-bs-target="#products-carousel"
+						data-bs-target="#product-carousel-2"
 						data-bs-slide-to="1"
-						id="indicator-1"
 						aria-label="Slide 2"
 					></button>
 					<button
 						type="button"
-						data-bs-target="#products-carousel"
+						data-bs-target="#product-carousel-2"
 						data-bs-slide-to="2"
-						id="indicator-2"
 						aria-label="Slide 3"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="3"
-						id="indicator-3"
-						aria-label="Slide 4"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="4"
-						id="indicator-4"
-						aria-label="Slide 5"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="5"
-						id="indicator-5"
-						aria-label="Slide 6"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="6"
-						id="indicator-6"
-						aria-label="Slide 7"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="7"
-						id="indicator-7"
-						aria-label="Slide 8"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="8"
-						id="indicator-8"
-						aria-label="Slide 9"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="9"
-						id="indicator-9"
-						aria-label="Slide 10"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="10"
-						id="indicator-10"
-						aria-label="Slide 11"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="11"
-						id="indicator-11"
-						aria-label="Slide 12"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="12"
-						id="indicator-12"
-						aria-label="Slide 13"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="13"
-						id="indicator-13"
-						aria-label="Slide 14"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#products-carousel"
-						data-bs-slide-to="14"
-						id="indicator-14"
-						aria-label="Slide 15"
 					></button>
 				</div>
 
 				<button
 					class="carousel-control-prev"
 					type="button"
-					data-bs-target="#products-carousel"
+					data-bs-target="#product-carousel-2"
 					data-bs-slide="prev"
 				>
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -1993,7 +1922,1123 @@
 				<button
 					class="carousel-control-next"
 					type="button"
-					data-bs-target="#products-carousel"
+					data-bs-target="#product-carousel-2"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 4 -->
+			<div
+				id="product-carousel-3"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-3"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-3"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-3"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-3"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-3"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 5 -->
+			<div
+				id="product-carousel-4"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-2.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-4"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-4"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-4"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-4"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-4"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 6 -->
+			<div
+				id="product-carousel-5"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-2.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-5"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-5"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-5"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-5"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-5"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 7 -->
+			<div
+				id="product-carousel-6"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-6"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-6"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-6"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-6"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-6"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 8 -->
+			<div
+				id="product-carousel-7"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-2.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-7"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-7"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-7"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-7"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-7"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 9 -->
+			<div
+				id="product-carousel-8"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-2.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-8"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-8"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-8"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-8"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-8"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 10 -->
+			<div
+				id="product-carousel-9"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-9"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-9"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-9"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-9"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-9"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 11 -->
+			<div
+				id="product-carousel-10"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-2.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-10"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-10"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-10"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-10"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-10"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 12 -->
+			<div
+				id="product-carousel-11"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-2.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-11"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-11"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-11"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-11"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-11"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 13 -->
+			<div
+				id="product-carousel-12"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 1.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-12"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-12"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-12"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-12"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-12"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 14 -->
+			<div
+				id="product-carousel-13"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-2.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-1.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 2.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-13"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-13"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-13"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-13"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-13"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Слайдер для продукта 15 -->
+			<div
+				id="product-carousel-14"
+				class="product-carousel carousel slide"
+				data-bs-ride="false"
+				data-bs-interval="false"
+				style="position: fixed; top: 0; height: 100%; width: 100%; display: none"
+			>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item h-100 active">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-3.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-4.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3.1"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item h-100">
+						<div class="row align-items-center h-100">
+							<div class="col text-center">
+								<img
+									src="img/portfolio/portfolio-2.jpg"
+									class="img-fluid"
+									loading="lazy"
+									style="max-width: 75vw; max-height: 75vh"
+									alt="Продукт 3.2"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#product-carousel-14"
+						data-bs-slide-to="0"
+						aria-label="Slide 1"
+						class="active"
+						aria-current="true"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-14"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#product-carousel-14"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#product-carousel-14"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#product-carousel-14"
 					data-bs-slide="next"
 				>
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -2012,29 +3057,22 @@
 		</div>
 
 		<script>
-			// Функция открытия модального окна с показом нужного слайда
-			function openProductGallery(slideIndex) {
+			// Функция открытия модального окна с показом нужного слайдера продукта
+			function openProductGallery(productIndex) {
 				// Показываем модальное окно
 				document.getElementById('productGalleryModal').style.display = 'block';
 
-				// Удаляем класс active со всех слайдов и индикаторов
-				document.querySelectorAll('.carousel-item').forEach(function (item) {
-					item.classList.remove('active');
+				// Скрываем все слайдеры продуктов
+				document.querySelectorAll('.product-carousel').forEach(function (carousel) {
+					carousel.style.display = 'none';
 				});
 
-				document.querySelectorAll('.carousel-indicators button').forEach(function (button) {
-					button.classList.remove('active');
-					button.removeAttribute('aria-current');
-				});
+				// Показываем слайдер для выбранного продукта
+				var productCarousel = document.getElementById('product-carousel-' + productIndex);
+				productCarousel.style.display = 'block';
 
-				// Делаем активным выбранный слайд и соответствующий индикатор
-				document.getElementById('carousel-item-' + slideIndex).classList.add('active');
-				var indicator = document.getElementById('indicator-' + slideIndex);
-				indicator.classList.add('active');
-				indicator.setAttribute('aria-current', 'true');
-
-				// Инициализируем карусель Bootstrap, если необходимо
-				var carousel = new bootstrap.Carousel(document.getElementById('products-carousel'));
+				// Инициализируем карусель Bootstrap для этого продукта
+				var carousel = new bootstrap.Carousel(productCarousel);
 
 				// Добавляем обработчик закрытия по клавише Esc
 				document.addEventListener('keydown', handleEscKeyPress);
@@ -2043,6 +3081,11 @@
 			// Функция закрытия модального окна
 			function closeProductGallery() {
 				document.getElementById('productGalleryModal').style.display = 'none';
+
+				// Скрываем все слайдеры продуктов
+				document.querySelectorAll('.product-carousel').forEach(function (carousel) {
+					carousel.style.display = 'none';
+				});
 
 				// Удаляем обработчик клавиши Esc, когда модальное окно закрыто
 				document.removeEventListener('keydown', handleEscKeyPress);
