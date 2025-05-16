@@ -65,7 +65,7 @@
 							<button
 								class="nav-link d-flex align-items-center gap-3 gap-md-2 gap-xl-3 lh-1"
 								data-bs-toggle="modal"
-								data-bs-target="#callbackModal"
+								data-bs-target="#callbackModalTwo"
 							>
 								<img src="img/ico/calculator.svg" />
 								Рассчитать стоимость
@@ -686,7 +686,7 @@
 
 							<!-- Магазин -->
 							<li class="nav-item nav-item-hero">
-								<a class="nav-link" href="archive-product-cat.html">Магазин</a>
+								<a class="nav-link" href="archive-product-page.html">Магазин</a>
 							</li>
 
 							<!-- Точка -->
@@ -779,7 +779,7 @@
 							<a class="nav-link" href="archive-services.html">Услуги</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="archive-product-cat.html">Магазин</a>
+							<a class="nav-link" href="archive-product-page.html">Магазин</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="archive-portfolio-2.html">Портфолио</a>
@@ -2001,6 +2001,246 @@
 			</div>
 		</div>
 		<!-- /Callback Modal -->
+
+		<!-- Callback Modal 2 -->
+		<div
+			class="modal fade"
+			id="callbackModalTwo"
+			tabindex="-1"
+			aria-labelledby="callbackModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<form
+					class="contact-form modal-content"
+					method="post"
+					action="mails/callback-mail.php"
+				>
+					<div class="modal-header">
+						<h5 class="modal-title" id="callbackModalLabel">Оставить заявку</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+
+					<div class="modal-body">
+						<!-- Первая строка: Имя, Телефон, Почта -->
+						<div class="row mb-4">
+							<div class="col-md-4 col-12 mb-3 mb-md-0">
+								<label for="tel-input" class="form-label">Имя</label>
+
+								<input
+									type="text"
+									class="form-control"
+									name="your-name"
+									id="name-input"
+									required=""
+								/>
+							</div>
+							<div class="col-md-4 col-12 mb-3 mb-md-0">
+								<label for="tel-input" class="form-label">Телефон</label>
+
+								<input
+									type="tel"
+									class="form-control"
+									name="your-phone"
+									id="phone-input"
+									required=""
+								/>
+							</div>
+							<div class="col-md-4 col-12">
+								<label for="tel-input" class="form-label">Email</label>
+
+								<input
+									type="email"
+									class="form-control"
+									name="your-email"
+									id="email-input"
+									required=""
+								/>
+							</div>
+						</div>
+
+						<!-- Вторая строка: Чекбоксы с картинками -->
+						<div class="row mb-4">
+							<p>Хочу получить расчет на:</p>
+
+							<div class="d-flex gap-4">
+								<label class="image-checkbox-container">
+									<input
+										type="checkbox"
+										name="image-checkbox-1"
+										value="option1"
+									/>
+									<span class="custom-checkbox"></span>
+									<img src="img/ico/whatsapp.svg" alt="Option 1" />
+								</label>
+								<label class="image-checkbox-container">
+									<input
+										type="checkbox"
+										name="image-checkbox-2"
+										value="option2"
+									/>
+									<span class="custom-checkbox"></span>
+									<img src="img/ico/telegram.svg" alt="Option 2" />
+								</label>
+								<label class="image-checkbox-container">
+									<input
+										type="checkbox"
+										name="image-checkbox-3"
+										value="option3"
+									/>
+									<span class="custom-checkbox"></span>
+									<img src="img/ico/message.svg" alt="Option 3" />
+								</label>
+							</div>
+						</div>
+
+						<!-- Третья строка: Текст + Селект -->
+						<div class="row mb-4">
+							<div class="col-md-8 col-12">
+								<label class="form-label">Тип продукции</label>
+								<select
+									class="form-select form-control"
+									name="your-select"
+									required=""
+								>
+									<option value="" selected=""></option>
+									<option value="option1">Буквы</option>
+									<option value="option2">Крышные установки</option>
+									<option value="option3">Конструкции для выставок</option>
+									<option value="option4">Тонкие световые панели</option>
+									<option value="option5">Стеллы, пилоны, доски почета</option>
+									<option value="option6">Опен-боксы для афиш, меню</option>
+									<option value="option7">Световые короба</option>
+									<option value="option8">Панель-кронштейны</option>
+									<option value="option9">Домовые знаки</option>
+									<option value="option10">Светильники</option>
+									<option value="option11">Штендеры, ролл-апы</option>
+									<option value="option12">Таблички, стенды</option>
+									<option value="option13">Уличные информстенды</option>
+									<option value="option14">Торговые точки</option>
+									<option value="option15">Неоновая реклама</option>
+									<option value="option16">Услуги</option>
+								</select>
+							</div>
+						</div>
+
+						<!-- Четвертая строка: Текстареа -->
+						<div class="row mb-4">
+							<p class="mb-2">Размеры, материалы и другие детали</p>
+							<div class="col-12">
+								<textarea
+									class="form-control"
+									name="your-message"
+									rows="4"
+								></textarea>
+							</div>
+						</div>
+
+						<!-- Пятая строка: Текстовые чекбоксы -->
+						<div class="row mb-4">
+							<p class="form-label">Так же мне нужно:</p>
+							<div class="col-12 d-flex gap-4">
+								<label class="custom-checkbox-container">
+									<input
+										type="checkbox"
+										name="text-checkbox-1"
+										value="text-option1"
+									/>
+									<span class="custom-checkbox"></span>
+									<span>Выезд на замер</span>
+								</label>
+								<label class="custom-checkbox-container">
+									<input
+										type="checkbox"
+										name="text-checkbox-2"
+										value="text-option2"
+									/>
+									<span class="custom-checkbox"></span>
+									<span>Разработка дизайна</span>
+								</label>
+								<label class="custom-checkbox-container">
+									<input
+										type="checkbox"
+										name="text-checkbox-3"
+										value="text-option3"
+									/>
+									<span class="custom-checkbox"></span>
+									<span>Монтаж</span>
+								</label>
+								<label class="custom-checkbox-container">
+									<input
+										type="checkbox"
+										name="text-checkbox-4"
+										value="text-option4"
+									/>
+									<span class="custom-checkbox"></span>
+									<span>Доставка</span>
+								</label>
+							</div>
+						</div>
+
+						<!-- Шестая строка: Прикрепить файл -->
+						<div class="row mb-0">
+							<div class="col-md-6 col-xl-4 col-12">
+								<div class="file-upload-wrapper w-100 mb-0">
+									<button
+										type="button"
+										class="btn btn-invert btn-big file-upload-btn"
+									>
+										Прикрепить файл
+									</button>
+									<input type="file" name="your-file" class="file-upload" />
+									<span class="file-name">Файл не прикреплен</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<div class="row w-100 m-0">
+							<div class="col-md-6 col-xl-4 col-12 mb-0 ps-0">
+								<button
+									type="submit"
+									class="btn btn-big me-auto pe-4 modal-btn w-100"
+									style="max-width: 212px"
+								>
+									Оставить заявку
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /Callback Modal -->
+
+		<script>
+			// Скрипт для работы с файлом в модальном окне
+			document.addEventListener('DOMContentLoaded', function () {
+				// Находим форму в модальном окне по ID
+				const modalForm = document.querySelector('#callbackModalTwo .modal-content');
+				if (!modalForm) return;
+
+				// Находим элементы загрузки файла внутри модального окна
+				const fileUpload = modalForm.querySelector('.file-upload');
+				const fileName = modalForm.querySelector('.file-name');
+
+				if (fileUpload && fileName) {
+					fileUpload.addEventListener('change', function (e) {
+						if (e.target.files.length > 0) {
+							fileName.textContent = e.target.files[0].name;
+						} else {
+							fileName.textContent = 'Файл не прикреплен';
+						}
+					});
+				}
+			});
+		</script>
 
 		<!-- JavaScript для работы меню -->
 		<script src="js/mega-menu.js"></script>
