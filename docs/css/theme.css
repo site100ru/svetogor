@@ -492,12 +492,17 @@ img {
 	--bs-modal-padding: 1.875rem 3.75rem;
 }
 
+.modal-body * {
+	font-size: 16px;
+}
+
 .modal-footer {
 	--bs-modal-padding: 3.75rem;
 	padding-top: 1.875rem;
 }
 
-.modal-body .form-label {
+.modal-body .form-label,
+.modal-body p {
 	font-family: var(--second-family);
 
 	color: #4b4b4b;
@@ -1999,6 +2004,10 @@ textarea {
 	display: none; /* Скрываем оригинальный чекбокс */
 }
 
+.custom-checkbox-container span:last-of-type {
+	font-weight: bold;
+}
+
 .custom-checkbox {
 	display: inline-block;
 	width: 16px;
@@ -2114,7 +2123,8 @@ option:hover {
 
 .file-upload-wrapper .file-name {
 	margin-left: 10px;
-	font-size: 14px;
+	font-size: 16px;
+	font-weight: 400;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -2144,7 +2154,7 @@ option:hover {
 	width: 100%;
 }
 
-@media (max-width:772px) {
+@media (max-width: 772px) {
 	#callbackModalFour .modal-dialog {
 		max-width: 500px;
 		padding-inline: 20px;
@@ -2171,7 +2181,6 @@ input[type='number']::-webkit-outer-spin-button {
 input[type='number'] {
 	-moz-appearance: textfield;
 }
-
 
 .callback-modal-free-col-input {
 	max-width: 160px;
