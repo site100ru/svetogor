@@ -235,6 +235,10 @@ img {
 .box-shadow-main-img .card .card-img-container {
 	box-shadow: var(--hero-box-shadow);
 }
+
+.box-shadow-main-img .card {
+	background-color: transparent;
+}
 /*** END CUSTOM BASE CLASS ***/
 
 /*** CUSTOM BOOTSTRAP CLASS ***/
