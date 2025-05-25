@@ -630,6 +630,11 @@ img {
 	color: var(--color-accent-hover);
 }
 
+
+.nav-link.active {
+	color: var(--color-accent-hover) !important;
+}
+
 @media (min-width: 992px) {
 	.nav-link,
 	.top-menu-tel {
@@ -1178,8 +1183,8 @@ img {
 	font-size: 14px;
 }
 
-.footer .navbar-nav .active {
-	color: var(--color-accent);
+.footer .footer-nav .nav-link.active {
+	color: var(--color-accent-hover) !important;
 }
 
 .footer .footer-nav .nav-link {
@@ -1564,6 +1569,7 @@ img {
 .header-nav-top a.nav-link:hover {
 	color: var(--color-accent-hover);
 }
+
 
 .nav-item-hero > a {
 	font-family: var(--second-family);
